@@ -41,7 +41,7 @@ nav{
 	letter-spacing: -3px;
 	animation: weight 2s infinite;
 	animation-delay: calc(var(--char-index) * 150ms);
-    background-color: #FFFFFF;
+    background-color: white;
 }
 
 @keyframes weight {
@@ -65,7 +65,7 @@ nav{
     padding: 50px;
 }
 
-#sottotitolo{
+.sottotitolo{
     font-family: "Inter";
     font-size: 30px;
     color: #6E6E73;
@@ -73,7 +73,34 @@ nav{
 }
 
 #last_news{
-    background-color: violet;
-    width: 100%;
-    height: 500px;
+    background-color: #F5F5F7;
 }
+
+#gallery_title{
+    margin-left: 7%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#gallery{
+    
+    height: fit-content;
+    overflow:auto;
+    white-space: nowrap;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.card {
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin: 20px;
+    width: 320px;  
+    height: 400px;  
+    background: white;  
+    border-radius: 40px;
+    color: #000000;
+    display:inline-block;
+}
+
+
