@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-body {
+body{
     margin: 0px;
     background-color: #000000;
 }
@@ -14,7 +14,7 @@ nav{
     margin: auto;
 }
 
-#headbar{
+.headbar{
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
@@ -74,25 +74,25 @@ nav{
 
 #last_news{
     background-color: #F5F5F7;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 #gallery_title{
-    margin-left: 7%;
+    
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
 }
 
-#gallery{
-    
+.gallery{
     height: fit-content;
-    overflow:auto;
+    overflow: auto;
     white-space: nowrap;
-    margin-left: 7%;
-    margin-right: 7%;
+    
 }
 
-.card {
+.card{
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
     margin: 20px;
     width: 320px;  
@@ -103,4 +103,47 @@ nav{
     display:inline-block;
 }
 
+.card:hover{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
+    animation: s 1s infinite alternate;
+	animation-delay: calc(var(--char-index) * 150ms); 
+    margin: 20px;
+    width: 320px;  
+    height: 400px;  
+    background: white;  
+    border-radius: 40px;
+    color: #000000;
+    display:inline-block;
+}
 
+
+
+@keyframes s {
+	from {
+		box-shadow: 1px 1px 5px rgb(163, 163, 163);
+        width: 320px;  
+        height: 400px;
+	}
+
+
+
+	to {
+		box-shadow: 1px 1px 30px rgb(163, 163, 163);
+        width: 330px;  
+        height: 410px;
+	}
+}
+
+.card:not(:hover)
+{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
+    animation: s 1s reverse;
+	animation-delay: calc(var(--char-index) * 150ms); 
+    margin: 20px;
+    width: 320px;  
+    height: 400px;  
+    background: white;  
+    border-radius: 40px;
+    color: #000000;
+    display:inline-block;
+}
