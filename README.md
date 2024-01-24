@@ -1,1 +1,1 @@
-"# AppleChiericiNorcia" 
+File esdrago del progetto APPLE 
