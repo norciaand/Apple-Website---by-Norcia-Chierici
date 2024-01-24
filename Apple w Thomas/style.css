@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+    margin: 0px;
+    background-color: #000000;
+}
+
+nav{
+    background-color: #F5F5F7;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+#headbar{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.elemento_navbar{
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;    
+}
+
+.logo_navbar{
+    height: 13px;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+#benvenuto_text {
+    font-family: "Inter", sans-serif;
+	font-size: 100px;
+	text-decoration: none;
+	font-weight: 100;
+	letter-spacing: -3px;
+	animation: weight 2s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+    background-color: #FFFFFF;
+}
+
+@keyframes weight {
+	from {
+		font-weight: 200;
+	}
+
+	50% {
+		font-weight: 900;
+	}
+
+	to {
+		font-weight: 200;
+	}
+}
+
+#title{
+    text-align: center;
+    width:auto;
+    background-color: white;
+    padding: 50px;
+}
+
+#sottotitolo{
+    font-family: "Inter";
+    font-size: 30px;
+    color: #6E6E73;
+    font-weight: 600;
+}
+
+#last_news{
+    background-color: violet;
+    width: 100%;
+    height: 500px;
+}
