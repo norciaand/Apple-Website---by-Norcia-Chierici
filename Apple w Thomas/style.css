@@ -72,14 +72,13 @@ nav{
     font-weight: 600;
 }
 
-#last_news{
-    background-color: #F5F5F7;
+.box{
     padding-left: 7%;
     padding-right: 7%;
+    background-color: #F5F5F7;
 }
 
-#gallery_title{
-    
+.box_title{
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -89,7 +88,6 @@ nav{
     height: fit-content;
     overflow: auto;
     white-space: nowrap;
-    
 }
 
 .card{
@@ -100,13 +98,13 @@ nav{
     background: white;  
     border-radius: 40px;
     color: #000000;
-    display:inline-block;
+    display: inline-block;
+    transition: 200ms transform ease-in-out;
 }
 
 .card:hover{
     box-shadow: 1px 1px 5px rgb(163, 163, 163);
-    animation: s 1s infinite alternate;
-	animation-delay: calc(var(--char-index) * 150ms); 
+    animation: s 0.5s infinite alternate;
     margin: 20px;
     width: 320px;  
     height: 400px;  
@@ -114,36 +112,13 @@ nav{
     border-radius: 40px;
     color: #000000;
     display:inline-block;
+    transform: scale(1.025);
 }
 
-
-
-@keyframes s {
-	from {
-		box-shadow: 1px 1px 5px rgb(163, 163, 163);
-        width: 320px;  
-        height: 400px;
-	}
-
-
-
-	to {
-		box-shadow: 1px 1px 30px rgb(163, 163, 163);
-        width: 330px;  
-        height: 410px;
-	}
+#iphone15, #macbookpro{
+    background-color: black;
 }
 
-.card:not(:hover)
-{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163);
-    animation: s 1s reverse;
-	animation-delay: calc(var(--char-index) * 150ms); 
-    margin: 20px;
-    width: 320px;  
-    height: 400px;  
-    background: white;  
-    border-radius: 40px;
-    color: #000000;
-    display:inline-block;
+#airpods{
+    background-color: white;
 }
