@@ -4,6 +4,7 @@ body{
     margin: 0px;
     background-color: #F5F5F7;
     letter-spacing: -0.5px;
+    font-family: "Inter";
 }
 
 nav{
@@ -13,6 +14,11 @@ nav{
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .headbar{
@@ -43,7 +49,6 @@ nav{
     margin-left: 5px;
     margin-right: 5px;
 }
-
 
 #bar1{
     background-color:white;
@@ -78,12 +83,10 @@ nav{
     width:auto;
     background-color: white;
     padding: 50px;
-
     background-color: #F5F5F7;
 }
 
 .sottotitolo{
-    font-family: "Inter";
     font-size: 30px;
     color: #6E6E73;
     font-weight: 600;
@@ -117,7 +120,7 @@ nav{
     padding-left: 7%;
     padding-right: 7%;
     background-color: #F5F5F7;
-    font-family: "Inter";
+
 }
 
 .box_title{
@@ -196,29 +199,29 @@ nav{
     left: 30px;
 }
 
-#iphone15pro{
+#iphone15pro_c{
     color:white;
     background-image: url(images/card/iphone15pro.jpeg);
 }
 
-#macbookpro{
+#macbookpro_c{
     background-image: url(images/card/macbookpro.jpeg);
 }
 
-#iphone15{
+#iphone15_c{
     background-image: url(images/card/iphone15.jpeg);
 }
 
-#watch{
+#watch_c{
     color: white;
     background-image: url(images/card/watch.jpeg);
 }
 
-#macbookair{
+#macbookair_c{
     background-image: url(images/card/macbookair.jpeg);
 }
 
-#ipad{
+#ipad_c{
     background-image: url(images/card/ipad.jpeg);
 }
 
@@ -276,9 +279,10 @@ nav{
     transform: scale(1.025);
 }
 
-#specialist{
+#specialist_c{
     background-image: url(images/card3/specialist.jpeg);
 }
-#storesession{
+
+#storesession_c{
     background-image: url(images/card3/storesession.jpeg);
 }
