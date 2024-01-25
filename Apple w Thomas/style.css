@@ -2,7 +2,7 @@
 
 body{
     margin: 0px;
-    background-color: #000000;
+    background-color: #F5F5F7;
 }
 
 nav{
@@ -33,6 +33,53 @@ nav{
     margin-right: 5px; 
 }
 
+#bar1{
+    background-color:white;
+    height: fit-content;
+}
+
+#bar1 > div {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#bar1 > div > span{
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight:350;
+}
+
+.link{
+    color: #0066CC;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link::after{
+    content: " >";
+}
+
+#title{
+    text-align: center;
+    width:auto;
+    background-color: white;
+    padding: 50px;
+
+    background-color: #F5F5F7;
+}
+
+.sottotitolo{
+    font-family: "Inter";
+    font-size: 30px;
+    color: #6E6E73;
+    font-weight: 600;
+}
+
 #benvenuto_text {
     font-family: "Inter", sans-serif;
 	font-size: 100px;
@@ -41,7 +88,6 @@ nav{
 	letter-spacing: -3px;
 	animation: weight 2s infinite;
 	animation-delay: calc(var(--char-index) * 150ms);
-    background-color: white;
 }
 
 @keyframes weight {
@@ -56,20 +102,6 @@ nav{
 	to {
 		font-weight: 200;
 	}
-}
-
-#title{
-    text-align: center;
-    width:auto;
-    background-color: white;
-    padding: 50px;
-}
-
-.sottotitolo{
-    font-family: "Inter";
-    font-size: 30px;
-    color: #6E6E73;
-    font-weight: 600;
 }
 
 .box{
