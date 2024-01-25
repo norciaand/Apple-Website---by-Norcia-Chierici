@@ -116,41 +116,105 @@ nav{
     padding-top: 20px;
 }
 
+.gallery2{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .gallery{
     height: fit-content;
     overflow: auto;
     white-space: nowrap;
+    margin-bottom: 40px;
 }
 
 .card{
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
-    margin: 20px;
-    width: 320px;  
-    height: 400px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;  /*320 x 400*/
+    height: 500px;  
     background: white;  
     border-radius: 40px;
-    color: #000000;
     display: inline-block;
     transition: 200ms transform ease-in-out;
 }
 
 .card:hover{
     box-shadow: 1px 1px 5px rgb(163, 163, 163);
-    animation: s 0.5s infinite alternate;
-    margin: 20px;
-    width: 320px;  
-    height: 400px;  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;  
+    height: 500px;  
     background: white;  
     border-radius: 40px;
-    color: #000000;
     display:inline-block;
     transform: scale(1.025);
 }
 
+.card2{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;  
+    height: 200px;
+    background: white;  
+    border-radius: 30px;
+    display: inline-block;
+    transition: 200ms transform ease-in-out;
+}
+
+.card2:hover{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;  
+    height: 200px;
+    background: white;  
+    border-radius: 30px;
+    display: inline-block;
+    transform: rotateZ(1deg);
+}
+
 #iphone15, #macbookpro{
-    background-color: black;
+    background-color: rgb(18, 18, 18);
 }
 
 #airpods{
     background-color: white;
+}
+
+.card3{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 470px;  /*320 x 400*/
+    height: 470px;  
+    background: white;  
+    border-radius: 40px;
+    display: inline-block;
+    transition: 200ms transform ease-in-out;
+}
+
+.card3:hover{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 470px;  /*320 x 400*/
+    height: 470px;  
+    background: white;  
+    border-radius: 40px;
+    display: inline-block;
+    transform: scale(1.025);
 }
