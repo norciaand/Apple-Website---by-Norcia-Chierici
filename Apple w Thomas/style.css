@@ -3,6 +3,7 @@
 body{
     margin: 0px;
     background-color: #F5F5F7;
+    letter-spacing: -0.5px;
 }
 
 nav{
@@ -21,17 +22,28 @@ nav{
 }
 
 .elemento_navbar{
-    font-family: sans-serif;
+    font-family: "Inter";
     font-size: 13px;
     margin-left: 10px;
-    margin-right: 10px;    
+    margin-right: 10px;
+    transition: 200ms transform ease-in-out;
+    display: inline-block;
+}
+
+.elemento_navbar:hover{
+    font-family: "Inter";
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transform:rotateY(30deg)
 }
 
 .logo_navbar{
     height: 13px;
     margin-left: 5px;
-    margin-right: 5px; 
+    margin-right: 5px;
 }
+
 
 #bar1{
     background-color:white;
@@ -52,16 +64,13 @@ nav{
     font-weight:350;
 }
 
-.link{
+.blue_link{
+    text-decoration: none;
     color: #0066CC;
 }
 
-.link:hover{
+.blue_link:hover{
     text-decoration: underline;
-}
-
-.link::after{
-    content: " >";
 }
 
 #title{
@@ -108,6 +117,7 @@ nav{
     padding-left: 7%;
     padding-right: 7%;
     background-color: #F5F5F7;
+    font-family: "Inter";
 }
 
 .box_title{
@@ -117,9 +127,12 @@ nav{
 }
 
 .gallery2{
+    padding-top: 5px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .gallery{
@@ -139,7 +152,7 @@ nav{
     height: 500px;  
     background: white;  
     border-radius: 40px;
-    display: inline-block;
+    display:inline-block;
     transition: 200ms transform ease-in-out;
 }
 
@@ -155,6 +168,58 @@ nav{
     border-radius: 40px;
     display:inline-block;
     transform: scale(1.025);
+}
+
+.card_uptitle{
+    width: fit-content;
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.card_title{
+    width: fit-content;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    width:fit-content;
+}
+
+.card_text{
+    width: fit-content;
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+#iphone15pro{
+    color:white;
+    background-image: url(images/card/iphone15pro.jpeg);
+}
+
+#macbookpro{
+    background-image: url(images/card/macbookpro.jpeg);
+}
+
+#iphone15{
+    background-image: url(images/card/iphone15.jpeg);
+}
+
+#watch{
+    color: white;
+    background-image: url(images/card/watch.jpeg);
+}
+
+#macbookair{
+    background-image: url(images/card/macbookair.jpeg);
+}
+
+#ipad{
+    background-image: url(images/card/ipad.jpeg);
 }
 
 .card2{
@@ -183,21 +248,13 @@ nav{
     transform: rotateZ(1deg);
 }
 
-#iphone15, #macbookpro{
-    background-color: rgb(18, 18, 18);
-}
-
-#airpods{
-    background-color: white;
-}
-
 .card3{
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 470px;  /*320 x 400*/
+    width: 470px; 
     height: 470px;  
     background: white;  
     border-radius: 40px;
@@ -211,10 +268,17 @@ nav{
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 470px;  /*320 x 400*/
+    width: 470px;
     height: 470px;  
     background: white;  
     border-radius: 40px;
     display: inline-block;
     transform: scale(1.025);
+}
+
+#specialist{
+    background-image: url(images/card3/specialist.jpeg);
+}
+#storesession{
+    background-image: url(images/card3/storesession.jpeg);
 }
