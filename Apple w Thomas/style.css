@@ -349,11 +349,11 @@ a{
     font-size: 35px;
     font-weight: 600;
     position: relative;
-    top: 360px;
+    top: 460px;
     left: -40px;
     transition: 200ms transform ease-in-out;
 }
 
 .card4:hover .card4_price{
-    transform: translateX(-100);
+    transform: translateY(-100px);
 }
