@@ -37,10 +37,6 @@ a{
 }
 
 .elemento_navbar:hover{
-    font-family: "Inter";
-    font-size: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
     transform:rotateY(30deg)
 }
 
@@ -50,12 +46,12 @@ a{
     margin-right: 5px;
 }
 
-#bar1{
+.bar1{
     background-color:white;
     height: fit-content;
 }
 
-#bar1 > div {
+.bar1 > div {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -63,15 +59,14 @@ a{
     padding-bottom: 20px;
 }
 
-#bar1 > div > span{
+.bar1 > div > span{
     font-size: 14px;
-    font-family: "Inter";
     font-weight:350;
 }
 
 .blue_link{
-    text-decoration: none;
     color: #0066CC;
+    text-decoration: none;
 }
 
 .blue_link:hover{
@@ -150,7 +145,7 @@ a{
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 400px;  /*320 x 400*/
+    width: 400px;
     height: 500px;  
     background: white;  
     border-radius: 40px;
@@ -159,16 +154,6 @@ a{
 }
 
 .card:hover{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 400px;  
-    height: 500px;  
-    background: white;  
-    border-radius: 40px;
-    display:inline-block;
     transform: scale(1.025);
 }
 
@@ -238,15 +223,6 @@ a{
 }
 
 .card2:hover{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 400px;  
-    height: 200px;
-    background: white;  
-    border-radius: 30px;
-    display: inline-block;
     transform: rotateZ(1deg);
 }
 
@@ -265,16 +241,6 @@ a{
 }
 
 .card3:hover{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 470px;
-    height: 470px;  
-    background: white;  
-    border-radius: 40px;
-    display: inline-block;
     transform: scale(1.025);
 }
 
@@ -286,7 +252,7 @@ a{
     background-image: url(images/card3/storesession.jpeg);
 }
 
-/*PAGINA 2*/
+/*------------------------------CATALOGO-----------------------------------*/
 
 .product_flow{
     margin-left: auto;
@@ -311,18 +277,7 @@ a{
 }
 
 .card4:hover{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 400px;  
-    height: 500px;  
-    background: white;  
-    border-radius:40px;
-    display:inline-block;
     transform: scale(1.025);
-    overflow: hidden;
 }
 
 .card4_uptitle{
@@ -356,4 +311,23 @@ a{
 
 .card4:hover .card4_price{
     transform: translateY(-100px);
+}
+
+
+/*----------------PRODUCT TYPE-----------------------------*/
+.video_product_box{
+    background-color: rgb(255, 0, 0);
+    margin-left:  7%;
+    margin-right: 7%;
+    height: 700px;
+    display:bloc;
+    overflow: hidden;
+    margin-bottom: 600px;
+    text-align: center;
+}
+
+
+.video_product{
+    position: relative;
+    bottom: 20%;
 }
