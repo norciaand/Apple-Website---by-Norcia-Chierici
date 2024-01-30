@@ -316,18 +316,26 @@ a{
 
 /*----------------PRODUCT TYPE-----------------------------*/
 .video_product_box{
-    background-color: rgb(255, 0, 0);
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
     margin-left:  7%;
     margin-right: 7%;
     height: 700px;
-    display:bloc;
-    overflow: hidden;
-    margin-bottom: 600px;
+    overflow:hidden;
+    margin-bottom: 20px;
     text-align: center;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 200ms transform ease-in-out;
+}
+
+.video_product_box:hover{
+    transform: scale(1.025);
 }
 
 
 .video_product{
-    position: relative;
-    bottom: 20%;
+    scale: 1.8;
 }
+
+    
