@@ -319,23 +319,55 @@ a{
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
     margin-left:  7%;
     margin-right: 7%;
-    height: 700px;
+    height: 800px;
     overflow:hidden;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    transition: 200ms transform ease-in-out;
+    transition: 200ms border-radius ease-in-out, 200ms transform ease-in-out;
 }
 
 .video_product_box:hover{
     transform: scale(1.025);
+    border-radius: 0px;
 }
 
 
 .video_product{
-    scale: 1.8;
+    scale: 1.7;
 }
 
-    
+/*-----------------------MACBOOK------------------------------------*/
+
+.gallery_macbook{
+    height: fit-content;
+    white-space: nowrap;
+    width: fit-content;
+    overflow: auto;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.card_macbook{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    display:inline-block;
+    border-radius: 20px;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+}
+
+.card_macbook:hover{
+    transform: scale(1.025);
+    border-radius: 0px;
+}
