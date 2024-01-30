@@ -172,7 +172,6 @@ a{
     position: relative;
     top: 40px;
     left: 30px;
-    width:fit-content;
 }
 
 .card_text{
@@ -336,10 +335,10 @@ a{
 
 
 .video_product{
-    scale: 1.7;
+    scale: 1.6;
 }
 
-/*-----------------------MACBOOK------------------------------------*/
+/*-----------------------MACBOOK------card500x300----------------*/
 
 .gallery_macbook{
     height: fit-content;
@@ -352,22 +351,35 @@ a{
 }
 
 
-.card_macbook{
+.card_macbook{ 
     background-color: rgb(255, 255, 255);
     width: 500px;
     height: 300px;
     display: inline-block;
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 12px;
     margin-right: 12px;
-    display:inline-block;
-    border-radius: 20px;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 }
 
 .card_macbook:hover{
     transform: scale(1.025);
     border-radius: 0px;
+}
+
+.card_macbook_title{
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    top: 241px;
+    left: 30px;
+    transition: 500ms background-color ease-in-out;
+}
+
+.card_macbook:hover .card_macbook_title{
+    background-color: rgb(224, 224, 224);
 }
