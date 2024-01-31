@@ -150,11 +150,12 @@ a{
     background: white;  
     border-radius: 40px;
     display:inline-block;
-    transition: 200ms transform ease-in-out;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 }
 
 .card:hover{
     transform: scale(1.025);
+    border-radius: 20px;
 }
 
 .card_uptitle{
@@ -236,11 +237,12 @@ a{
     background: white;  
     border-radius: 40px;
     display: inline-block;
-    transition: 200ms transform ease-in-out;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 }
 
 .card3:hover{
     transform: scale(1.025);
+    border-radius: 25px;
 }
 
 #specialist_c{
@@ -262,8 +264,8 @@ a{
 
 .card4{
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     width: 400px;  /*320 x 400*/
@@ -271,12 +273,13 @@ a{
     background: white;  
     border-radius: 40px;
     display:inline-block;
-    transition: 200ms transform ease-in-out;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
     overflow: hidden;
 }
 
 .card4:hover{
     transform: scale(1.025);
+    border-radius: 30px;
 }
 
 .card4_uptitle{
