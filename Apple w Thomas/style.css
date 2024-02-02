@@ -114,7 +114,6 @@ a{
 .box{
     padding-left: 7%;
     padding-right: 7%;
-    background-color: #F5F5F7;
 }
 
 .box_title{
@@ -385,4 +384,37 @@ a{
 
 .card_macbook:hover .card_macbook_title{
     background-color: rgb(224, 224, 224);
+}
+
+
+/*----------------PRODUCT PAGE--------------------*/
+.box_product{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.container_product > div{
+    display:inline-flex;
+}
+
+.image_product{
+    padding:20px;
+}
+
+.image_product > img {
+    width: 100% ;
+    max-width: 900px;
+    height: auto;
+    border-radius: 30px;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+}
+
+.image_product > img:hover {
+    transform: scale(1.025);
+    border-radius: 0px;
+}
+
+.form_product{
+    position: relative;
+    top:-330px;
 }
