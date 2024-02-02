@@ -365,6 +365,11 @@ a{
     margin-left: 12px;
     margin-right: 12px;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+
+    background-size:60%;
+    background-position:center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
 }
 
 .card_macbook:hover{
@@ -386,6 +391,13 @@ a{
     background-color: rgb(224, 224, 224);
 }
 
+#macbookpro14{
+    background-image: url(images/product_pages/macbookpro14/silver0.png);   
+}
+
+#macbookpro16{
+    background-image: url(images/product_pages/macbookpro16/black1.png); 
+}
 
 /*----------------PRODUCT PAGE--------------------*/
 .box_product{
