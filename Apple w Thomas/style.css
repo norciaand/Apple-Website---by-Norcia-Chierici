@@ -487,7 +487,7 @@ a{
     height: 40px;
     width: 200px;
     border: none;
-    border-radius: 60px;
+    border-radius: 30px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -495,10 +495,13 @@ a{
     margin: 20px;
     position: fixed;
     top: 90%;
-    left: 65%;
-    transition: 200ms transform ease-in-out;
+    left: 64%;
+    transition: 200ms all ease-in-out;
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
 }
 
 .buy:hover{
     transform: scale(1.025);
+    box-shadow: none;
+    border-radius: 10px;
 }
