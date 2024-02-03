@@ -469,11 +469,23 @@ a{
     transition: 200ms background-color ease-in-out;
 }
 
+.option_product_label_2{
+    
+    background-color:white;
+    display: block;
+    height: 90px;
+    margin: 10px;
+    border-radius: 20px;
+    border:#828283 1px solid;
+    width: 190px;
+    transition: 200ms background-color ease-in-out;
+}
+
 .option_product_label:hover{
     background-color: #f8f8f8;
 }
 
-.option_product_label > p {
+.option_product_label > p , .option_product_label_2 > p{
     margin:0;
     display: flex;
     height: 90px;
