@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="Andrea Norcia">
+    <link rel="stylesheet" href="style.css">
+    <title>iPhone 15 Pro</title>
+</head>
+
+<nav>
+    <div class="headbar">
+        <span class="elemento_navbar"><a href="index.html"><img class="logo_navbar" src="images/apple-logo.svg" height="15px"></a></span>
+        <span class="elemento_navbar"><a href="index.html">Apple</a></span>
+        <span class="elemento_navbar"><a href="mac.html">Mac</a></span>
+        <span class="elemento_navbar">iPhone</span>
+        <span class="elemento_navbar">iPad</span>
+        <span class="elemento_navbar">Watch</span>
+        <span class="elemento_navbar">AirPods</span>
+        <span class="elemento_navbar"><a href="catalogo.html"><img class="logo_navbar" src="images/search-icon.webp" height="15px"></a></span>
+    </div>
+</nav>
+
+<body>
+    <div class="bar1">
+        <div>
+            <span style="color:#0066CC"> < </span>
+            <span><a class="blue_link" href="mac.html">iPhone</a></span>
+            <span> | Ecco la pagina di acquisto del nuovo iPhone 15 Pro. Se stai cercando la home page, torna ad</span>
+            <span><a class="blue_link" href="index.html">Apple Store</a></span> 
+            <span style="color:#0066CC; "> > </span>
+        </div>
+    </div>
+
+    <div class="box_product">
+        <div class="box_title">
+            <span class="sottotitolo" style="color: black;">iPhone 15 Pro</span>
+            <span class="sottotitolo">,&nbspcon tutta la potenza Pro</span>
+        </div>
+
+        <table>
+            <tr>
+                <td id="first_product">
+                    <div class="image_product" id="image_product_macbookpro14">
+                        <img id="img" src="images/product_pages/macbookpro14/silver0.png">
+                    </div>
+                    <span id="prezzo">€ 1.269,00</span>
+                </td>
+                <td>
+                    <form class="form_product">
+                        <div class="box_title">
+                            <span class="sottotitolo">Specifiche</span>
+                        </div>
+                        <ul class="list_product_stats">
+                            <li>Chip Apple M3 con CPU 8‑core, GPU 10‑core e Neural Engine 16‑core</li>
+                            <li id="ram">8GB di memoria unificata</li>
+                            <li id="ssd">Unità SSD da 512GB</li>
+                            <li>Display Liquid Retina XDR da 14"</li>
+                            <li>Alimentatore USB‑C da 70W</li>
+                            <li>Due porte Thunderbolt / USB 4, porta HDMI, slot SDXC card, jack cuffie, porta
+                                MagSafe 3</li>
+                            <li>Magic Keyboard retroilluminata con Touch ID - Italiano</li>
+                        </ul>
+                        <div class="box_title">
+                            <span class="sottotitolo">Scegli il Modello</span>
+                        </div>
+                        <div class="option_container">
+                            <input class="option_product" type="radio" name="option_model" value="pro" id="option_model_PRO" required>
+                            <label class="option_product_label opl2l" for="option_model_PRO" id="option_model_label_PRO">
+                                <p>iPhone 15 Pro</p>
+                            </label>
+
+                            <input class="option_product" type="radio" name="option_model" value="pro" id="option_model_PRO" required>
+                            <label class="option_product_label opl2r" for="option_model_PRO" id="option_model_label_PRO">
+                                <p>iPhone 15 Pro Max</p>
+                            </label>
+                        </div>
+                        <div class="box_title">
+                            <span class="sottotitolo">Scegli il Colore</span>
+                        </div>
+                        <div class="list_product_stats" id="colorTexted" style="margin-top: 5px;">Colore - Titanio Naturale</div>
+                        <div class="option_container iphone_color_picker">
+                            <input class="option_product" type="radio" name="option_color" value="Titanio Naturale"
+                            id="option_color_NATURAL" required>
+                            <label for="option_color_NATURAL" >
+                                <img id="color0" src="images/product_pages/iphone15pro/color_natural.png">
+                            </label>
+                            <input class="option_product" type="radio" name="option_color" value="Titanio Blu"
+                            id="option_color_BLUE" required>
+                            <label for="option_color_BLUE" >
+                                <img id="color1" src="images/product_pages/iphone15pro/color_blue.png">
+                            </label>
+                            <input class="option_product" type="radio" name="option_color" value="Titanio Bianco"
+                            id="option_color_WHITE" required>
+                            <label for="option_color_WHITE">
+                                <img id="color2" src="images/product_pages/iphone15pro/color_white.png">
+                            </label>
+                            <input class="option_product" type="radio" name="option_color" value="Titanio Nero"
+                            id="option_color_BLACK" required>
+                            <label for="option_color_BLACK">
+                                <img id="color3" src="images/product_pages/iphone15pro/color_black.png">
+                            </label>
+                        </div>
+                        
+
+
+                        <button class="buy">ACQUISTA</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        let colorTexted = document.getElementById("colorTexted");
+        let btnsColor = document.querySelectorAll(".option_product[name='option_color']");
+        
+        const color0 = document.getElementById("color0");
+        const color1 = document.getElementById("color1");
+        const color2 = document.getElementById("color2");
+        const color3 = document.getElementById("color3");
+
+        btnsColor.forEach(btnColor => {
+            btnColor.addEventListener('click', () => {
+                let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
+                colorTexted.textContent = "Colore - " + coloreSelezionato;
+                color0.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color1.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color2.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color3.style.border = "2px solid rgba(0, 102, 204, 0)";
+                switch (coloreSelezionato) {
+                    case "Titanio Naturale":
+                        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        break;
+                    case "Titanio Blu":
+                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        break;
+                    case "Titanio Bianco":
+                        color2.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        break;
+                    case "Titanio Nero":
+                        color3.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        break;
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

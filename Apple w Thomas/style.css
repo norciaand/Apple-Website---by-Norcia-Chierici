@@ -442,7 +442,7 @@ a{
 }
 
 .form_product{
-    width: 80%;
+    width: 85%;
 }
 
 .list_product_stats{
@@ -458,6 +458,10 @@ a{
     display: none;
 }
 
+.option_container{
+    display: flex;
+}
+
 .option_product_label{
     background-color:white;
     display: block;
@@ -469,23 +473,37 @@ a{
     transition: 200ms background-color ease-in-out;
 }
 
-.option_product_label_2{
-    
-    background-color:white;
-    display: block;
-    height: 90px;
-    margin: 10px;
-    border-radius: 20px;
-    border:#828283 1px solid;
-    width: 190px;
-    transition: 200ms background-color ease-in-out;
-}
-
 .option_product_label:hover{
     background-color: #f8f8f8;
 }
 
-.option_product_label > p , .option_product_label_2 > p{
+.opl2{
+    position: relative;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.opl2l{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    border-radius: 20px 0px 0px 20px;
+    padding-right: 5px;
+}
+
+.opl2r{
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 0px 20px 20px 0px;
+    padding-left: 5px;
+}
+
+.option_product_label > p{
     margin:0;
     display: flex;
     height: 90px;
@@ -520,4 +538,40 @@ a{
     transform: scale(1.025);
     box-shadow: none;
     border-radius: 10px;
+}
+
+
+/*-------------IPHONE 15 PRO--------------------*/
+.iphone_color_picker{
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.iphone_color_picker img {
+    width: 40px;
+    margin-left: 13px;
+    margin-right: 13px;
+    transition: all 200ms ease-in-out;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius:90px;
+    padding: 2px;
+
+    border: 2px solid rgba(0, 102, 204, 0);
+}
+
+.iphone_color_picker img:hover{
+    transform: scale(1.025);
+    border: 2px solid #afadad
+}
+
+.iphone_color_picker img:active{
+    border: 2px solid rgba(0, 102, 204, 255);
 }
