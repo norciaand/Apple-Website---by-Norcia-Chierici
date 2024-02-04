@@ -4,7 +4,7 @@ prodotti
 IPHONE
 -------
 
-15 Pro
+15 Pro FATTO
 
 15 
 
@@ -17,8 +17,8 @@ IPHONE
 MACBOOK
 --------
 
-MacBook Pro 14/16 M3
-Macbook Air 15
+MacBook Pro 14/16 M3/M3Pro FATTO
+Macbook Air 15 FATTO
 
 IPAD
 -------
