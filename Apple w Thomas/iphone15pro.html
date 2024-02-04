@@ -71,8 +71,8 @@
                                 <p>iPhone 15 Pro</p>
                             </label>
 
-                            <input class="option_product" type="radio" name="option_model" value="pro" id="option_model_PRO" required>
-                            <label class="option_product_label opl2r" for="option_model_PRO" id="option_model_label_PRO">
+                            <input class="option_product" type="radio" name="option_model" value="max" id="option_model_MAX" required>
+                            <label class="option_product_label opl2r" for="option_model_MAX" id="option_model_label_MAX">
                                 <p>iPhone 15 Pro Max</p>
                             </label>
                         </div>
@@ -115,12 +115,20 @@
     <script>
         let colorTexted = document.getElementById("colorTexted");
         let btnsColor = document.querySelectorAll(".option_product[name='option_color']");
-        let btns
+        let btnsModel = document.querySelectorAll(".option_product[name='option_model']");
 
         const color0 = document.getElementById("color0");
         const color1 = document.getElementById("color1");
         const color2 = document.getElementById("color2");
         const color3 = document.getElementById("color3");
+
+        const model0 = document.getElementById("option_model_label_PRO");
+        const model1 = document.getElementById("option_model_label_MAX");
+
+        model0.style.border = "#0066cc 1px solid";
+        model1.style.border = "#0066cc00 1px solid";
+
+        let model = 0;
 
         btnsColor.forEach(btnColor => {
             btnColor.addEventListener('click', () => {
@@ -143,6 +151,24 @@
                     case "Titanio Nero":
                         color3.style.border = "2px solid rgba(0, 102, 204, 255)";
                         break;
+                }
+            });
+        });
+
+        btnsModel.forEach(btnModel => {
+            btnModel.addEventListener('change', () => {
+                let modelloSelezionato = document.querySelector(".option_product[name='option_model']:checked").value;
+                if (modelloSelezionato == "pro")
+                {
+                    console.log("PRO");
+                    model0.style.border = "#0066cc 1px solid";
+                    model1.style.border = "#82828300 1px solid";
+                }
+                else if (modelloSelezionato == "max")
+                {
+                    console.log("PRO MAX");
+                    model1.style.border = "#0066cc 1px solid";
+                    model0.style.border = "#82828300 1px solid";
                 }
             });
         });
