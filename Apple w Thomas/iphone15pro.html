@@ -35,7 +35,7 @@
 
     <div class="box_product">
         <div class="box_title">
-            <span class="sottotitolo" style="color: black;">iPhone 15 Pro</span>
+            <span class="sottotitolo" style="color: black;" id="model">iPhone 15 Pro</span>
             <span class="sottotitolo">,&nbspcon tutta la potenza Pro</span>
         </div>
 
@@ -102,7 +102,9 @@
                                 <img id="color3" src="images/product_pages/iphone15pro/color_black.png">
                             </label>
                         </div>
+
                         
+
 
 
                         <button class="buy">ACQUISTA</button>
@@ -122,6 +124,7 @@
         const color2 = document.getElementById("color2");
         const color3 = document.getElementById("color3");
 
+        const modelText = document.getElementById("model");
         const model0 = document.getElementById("option_model_label_PRO");
         const model1 = document.getElementById("option_model_label_MAX");
 
@@ -129,6 +132,7 @@
         model1.style.border = "#0066cc00 1px solid";
 
         let model = 0;
+        let color = 0;
 
         btnsColor.forEach(btnColor => {
             btnColor.addEventListener('click', () => {
@@ -160,15 +164,17 @@
                 let modelloSelezionato = document.querySelector(".option_product[name='option_model']:checked").value;
                 if (modelloSelezionato == "pro")
                 {
-                    console.log("PRO");
+                    model = 0;
                     model0.style.border = "#0066cc 1px solid";
                     model1.style.border = "#82828300 1px solid";
+                    modelText.textContent = "iPhone 15 Pro"
                 }
                 else if (modelloSelezionato == "max")
                 {
-                    console.log("PRO MAX");
+                    model = 1;
                     model1.style.border = "#0066cc 1px solid";
                     model0.style.border = "#82828300 1px solid";
+                    modelText.textContent = "iPhone 15 Pro Max"
                 }
             });
         });
