@@ -62,13 +62,14 @@ nav{
 @media screen and (max-width: 800px) {
     nav{
         padding:5px;
+        
     }
     
     .elemento_navbar{
         margin-left: 5px;
         margin-right: 5px;
         padding-top: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
     }
 
 }
@@ -584,6 +585,12 @@ nav{
     margin-right: 7%;
 }
 
+.box_table{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+
 #first_product{ /*item a sinistra, che contiene la foto e che sta in alto*/
     vertical-align: top;
 }
@@ -593,8 +600,8 @@ nav{
 }
 
 .image_product > img { /*immagine*/
-    width: 100% ;
-    max-width: 900px;
+    width: 900px ;
+    max-width: 100%;
     height: auto;
     border-radius: 30px;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
@@ -688,6 +695,11 @@ nav{
     font-weight: 600;
 }
 
+.opl2l > p, .opl2r > p {
+    justify-content: center;
+    padding: 0;
+}
+
 .buy{   /*PULSTANTE ACQUISTA*/
     background-color: #0066CC;
     color: white;
@@ -702,7 +714,7 @@ nav{
     margin: 20px;
     position: fixed;
     top: 90%;
-    left: 64%;
+    right: 18%;
     transition: 200ms all ease-in-out;
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
 }
@@ -711,6 +723,33 @@ nav{
     transform: scale(1.025);
     box-shadow: none;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .form_product{
+        width: 100%;
+    }
+    .box_table{
+        display: block;
+    }
+    .list_product_stats{
+        text-align: center;
+        margin-right: 10px;
+    }
+    .option_product_label{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .buy{
+        position: relative;
+        top:auto;
+        left:auto;
+        right: auto;
+        margin: 30px auto 30px auto;
+    }
 }
 
 /*-------------IPHONE 15 PRO--------------------*/
