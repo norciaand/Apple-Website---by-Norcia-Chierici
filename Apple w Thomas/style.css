@@ -30,7 +30,7 @@ a{
 
 nav{
     background-color: #F5F5F7;
-    padding:10px;
+    padding: 15px;
     margin: auto;
 }
 
@@ -785,4 +785,10 @@ nav{
 
 .iphone_color_picker img:active{
     border: 2px solid rgba(0, 102, 204, 255);
+}
+
+@media screen and (max-width: 800px) {
+    .iphone_color_picker{ /*classe helper in aggiunta alla option container per i colori*/
+        margin-top: 5px;
+    }
 }
