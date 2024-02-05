@@ -59,7 +59,7 @@ nav{
     margin-right: 5px;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     nav{
         padding:5px;
     }
@@ -93,7 +93,7 @@ nav{
     font-weight:350;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px){
     .bar1 > div{
         margin-left: 2%;
         margin-right: 2%;
@@ -140,7 +140,7 @@ nav{
 	}
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .container_titolo{
         padding-left: 10px;
         padding-right: 10px;
@@ -183,7 +183,7 @@ nav{
     width: fit-content;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .box_title{
         padding-left: 0px;
         padding-right: 20px;
@@ -238,7 +238,7 @@ nav{
     left: 30px;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
 
     .card{
         width: 90%;
@@ -335,7 +335,7 @@ nav{
     border-radius: 25px;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .gallery2{
         display: block;
         width: 100%;
@@ -439,7 +439,7 @@ nav{
     transform: translateY(-100px);
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .product_flow{
         display: block;
         width: 100%;
@@ -479,38 +479,43 @@ nav{
 }
 
 .video_product{
-    scale: 1.4;
+    scale: 1.6;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .video_product_box{
         height: 200px;
         border-radius: 20px;
     }
+    .video_product{
+        scale: 1.4;
+    }
 }
 
 .gallery_macbook{
+    display: flex;
     height: fit-content;
     white-space: nowrap;
-    width: fit-content;
+    width: 80vw;
     overflow: auto;
     margin-bottom: 40px;
     margin-right: auto;
     margin-left: auto;
+    justify-content: center;
 }
 
 
 .card_macbook{ 
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 300px;
-    display: inline-block;
+    background-color:white;
+    height: 15vw;
+    width: 24vw;
+    display: block;
     box-shadow: 1px 1px 5px rgb(163, 163, 163); 
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 
     background-size:60%;
@@ -529,7 +534,7 @@ nav{
     font-size: 24px;
     font-weight: 600;
     position: relative;
-    top: 241px;
+    top: 80%;
     left: 30px;
     transition: 500ms background-color ease-in-out;
 }
@@ -550,7 +555,7 @@ nav{
     background-image: url(images/product_pages/macbookair15/galaxy0.jpg);
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 800px) {
     .gallery_macbook{
         display: block;
         width: 100%;
@@ -558,7 +563,7 @@ nav{
 
     .card_macbook{
         width: 90%;
-        height: 300px;
+        height: 350px;
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -569,7 +574,7 @@ nav{
     }
 
     .card_macbook_title{
-        top: 251px;
+        top: 301px;
     }
 }
 
