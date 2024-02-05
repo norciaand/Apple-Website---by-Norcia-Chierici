@@ -1,0 +1,587 @@
+/*---------------------GENERAL--------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: #F5F5F7;
+    letter-spacing: -0.5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.blue_link{
+    color: #0066CC;
+    text-decoration: none;
+}
+
+.blue_link:hover{
+    text-decoration: underline;
+}
+
+/*-----------------NAVBAR------------------*/
+
+nav{
+    background-color: #F5F5F7;
+    padding:10px;
+    margin: auto;
+}
+
+
+.headbar{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.elemento_navbar{
+    font-size: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 200ms transform ease-in-out;
+    display: inline-block;
+}
+
+.elemento_navbar:hover{
+    transform:rotateY(30deg)
+}
+
+.logo_navbar{
+    height: 13px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*-------------COMMERCIAL-BAR--(bar1)------------*/
+
+.bar1{
+    background-color:white;
+    height: fit-content;
+}
+
+.bar1 > div {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bar1 > div > span{
+    font-size: 14px;
+    font-weight:350;
+}
+
+/*--------------------TITOLI------------------*/
+
+.container_titolo{
+    text-align: center;
+    width:auto;
+    background-color: white;
+    padding: 50px;
+    background-color: #F5F5F7;
+}
+
+.sottotitolo{
+    font-size: 30px;
+    color: #6E6E73;
+    font-weight: 600;
+}
+
+.titolo{
+	font-size: 100px;
+	text-decoration: none;
+	font-weight: 100;
+	letter-spacing: -3px;
+	animation: weight 2s infinite;
+	animation-delay: calc(var(--char-index) * 150ms);
+}
+
+@keyframes weight {
+	from {
+		font-weight: 200;
+	}
+
+	50% {
+		font-weight: 900;
+	}
+
+	to {
+		font-weight: 200;
+	}
+}
+
+/*-----------------PARTI DELLA PAGINA-------------*/
+
+.box{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.box_title{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.gallery{
+    height: fit-content;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 40px;
+}
+
+.gallery2{
+    padding-top: 5px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+/*--------------CARD SCHERMATA BENVENUTO-------------------*/
+
+.card{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;
+    height: 500px;  
+    background: white;  
+    border-radius: 40px;
+    display:inline-block;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.025);
+    border-radius: 20px;
+}
+
+.card_uptitle{
+    width: fit-content;
+    font-size: 14px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.card_title{
+    width: fit-content;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+
+.card_text{
+    width: fit-content;
+    font-size: 18px;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+/*-----------------CARD1 DELLA SCHERMATA PRINCIPALE---------------*/
+
+#iphone15pro_c{
+    color:white;
+    background-image: url(images/card/iphone15pro.jpeg);
+}
+
+#macbookpro_c{
+    background-image: url(images/card/macbookpro.jpeg);
+}
+
+#iphone15_c{
+    background-image: url(images/card/iphone15.jpeg);
+}
+
+#watch_c{
+    color: white;
+    background-image: url(images/card/watch.jpeg);
+}
+
+#macbookair_c{
+    background-image: url(images/card/macbookair.jpeg);
+}
+
+#ipad_c{
+    background-image: url(images/card/ipad.jpeg);
+}
+
+.card2{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;  
+    height: 200px;
+    background: white;  
+    border-radius: 30px;
+    display: inline-block;
+    transition: 200ms transform ease-in-out;
+}
+
+.card2:hover{
+    transform: rotateZ(1deg);
+}
+
+.card3{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 470px; 
+    height: 470px;  
+    background: white;  
+    border-radius: 40px;
+    display: inline-block;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+}
+
+.card3:hover{
+    transform: scale(1.025);
+    border-radius: 25px;
+}
+
+#specialist_c{
+    background-image: url(images/card3/specialist.jpeg);
+}
+
+#storesession_c{
+    background-image: url(images/card3/storesession.jpeg);
+}
+
+/*-----------------------CATALOGO---------------------------*/
+
+.product_flow{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F7;
+}
+
+
+.card4{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px;  /*320 x 400*/
+    height: 500px;  
+    background: white;  
+    border-radius: 40px;
+    display:inline-block;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+    overflow: hidden;
+}
+
+.card4:hover{
+    transform: scale(1.025);
+    border-radius: 30px;
+}
+
+.card4_uptitle{
+    width: fit-content;
+    font-size: 14px;
+    position:relative;
+    top: 30px;
+    left: 30px;
+}
+
+.card4_title{
+    width: fit-content;
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    top: 40px;
+    left: 30px;
+    width:fit-content;
+}
+
+.card4_price{
+    float: right;
+    width: fit-content;
+    font-size: 35px;
+    font-weight: 600;
+    position: relative;
+    top: 460px;
+    left: -40px;
+    transition: 200ms transform ease-in-out;
+}
+
+.card4:hover .card4_price{
+    transform: translateY(-100px);
+}
+
+
+/*------------------PRODUCT TYPE-----------------------------*/
+.video_product_box{
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    margin-left:  7%;
+    margin-right: 7%;
+    height: 800px;
+    overflow:hidden;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 200ms border-radius ease-in-out, 200ms transform ease-in-out;
+}
+
+.video_product_box:hover{
+    transform: scale(1.025);
+    border-radius: 0px;
+}
+
+.video_product{
+    scale: 1.6;
+}
+
+/*-----------------------MACBOOK------card500x300----------------*/
+
+.gallery_macbook{
+    height: fit-content;
+    white-space: nowrap;
+    width: fit-content;
+    overflow: auto;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.card_macbook{ 
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+
+    background-size:60%;
+    background-position:center;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+.card_macbook:hover{
+    transform: scale(1.025);
+    border-radius: 0px;
+}
+
+.card_macbook_title{
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    top: 241px;
+    left: 30px;
+    transition: 500ms background-color ease-in-out;
+}
+
+.card_macbook:hover .card_macbook_title{
+    background-color: rgb(224, 224, 224);
+}
+
+#macbookpro14{
+    background-image: url(images/product_pages/macbookpro14/silver0.png);   
+}
+
+#macbookpro16{
+    background-image: url(images/product_pages/macbookpro16/black1.png); 
+}
+
+#macbookair15{
+    background-image: url(images/product_pages/macbookair15/galaxy0.jpg);
+}
+
+/*----------------PRODUCT PAGE--------------------*/
+.box_product{       /*scatola che contiene tutto*/ 
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+#first_product{ /*item a sinistra, che contiene la foto e che sta in alto*/
+    vertical-align: top;
+}
+
+.image_product{ /*container dell'immagine*/
+    padding:20px;
+}
+
+.image_product > img { /*immagine*/
+    width: 100% ;
+    max-width: 900px;
+    height: auto;
+    border-radius: 30px;
+    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+}
+
+.image_product > img:hover { 
+    transform: scale(1.025);
+    border-radius: 15px;
+}
+
+#prezzo{    /*stringa del prezzo*/
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.form_product{  /*item a destra*/
+    width: 85%;
+}
+
+.list_product_stats{    /*lista delle specifiche*/
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.list_product_stats > li {  /*singolo elemento della lista*/
+    padding-bottom: 10px;
+}
+
+.option_container{  /*container di quelle opzioni messe in linea (FLEXBOX)*/
+    display: flex;
+}
+
+.option_product{    /*tutti i radio button*/
+    display: none;
+}
+
+.option_product_label{  /*pulsante effettivo dei radiobutton*/
+    background-color:white;
+    display: block;
+    height: 90px;
+    margin: 10px;
+    border-radius: 20px;
+    border:#828283 1px solid;
+    width: 100%;
+    transition: 200ms background-color ease-in-out;
+}
+
+.option_product_label:hover{
+    background-color: #f8f8f8;
+}
+
+.opl2{  /*classe di label helper da aggiungere nel caso si parli di flexbox*/
+    position: relative;
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.opl2l{ /*classe helper scelta contrapposta SX (es scelta 15pro/15promax)*/
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    border-radius: 20px 0px 0px 20px;
+    padding-right: 5px;
+    border:#0066cc00 1px solid;
+}
+
+.opl2r{ /*classe helper scelta contrapposta DX*/
+    margin-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 0px 20px 20px 0px;
+    padding-left: 5px;
+    border:#0066cc00 1px solid;
+}
+
+.option_product_label > p{ /*testo dentro alle label*/
+    margin:0;
+    display: flex;
+    height: 90px;
+    align-items:center;
+    justify-content:baseline;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+
+.buy{   /*PULSTANTE ACQUISTA*/
+    background-color: #0066CC;
+    color: white;
+    height: 40px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px;
+    position: fixed;
+    top: 90%;
+    left: 64%;
+    transition: 200ms all ease-in-out;
+    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+}
+
+.buy:hover{
+    transform: scale(1.025);
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+
+/*-------------IPHONE 15 PRO--------------------*/
+.iphone_color_picker{ /*classe helper in aggiunta alla option container per i colori*/
+    margin-top: 20px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.iphone_color_picker img {
+    width: 40px;
+    margin-left: 13px;
+    margin-right: 13px;
+    transition: all 200ms ease-in-out;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius:90px;
+    padding: 2px;
+
+    border: 2px solid rgba(0, 102, 204, 0);
+}
+
+.iphone_color_picker img:hover{
+    transform: scale(1.025);
+    border: 2px solid #afadad
+}
+
+.iphone_color_picker img:active{
+    border: 2px solid rgba(0, 102, 204, 255);
+}
