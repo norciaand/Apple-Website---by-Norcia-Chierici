@@ -65,7 +65,11 @@ nav{
 @media screen and (max-width: 768px) {
     nav{
         padding:5px;
-        
+    }
+
+    .headbar{
+        justify-content: space-between;
+        z-index: 100;
     }
     
     .headbar_element{
@@ -73,8 +77,37 @@ nav{
         margin-right: 5px;
         padding-top: 20px;
         padding-bottom: 20px;
+        display: block;
+        transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
+    .headbar_content{   
+        position: absolute; top:67px; left:0px; width: 100%;
+        height: 0vh; overflow: hidden;transition: all 500ms cubic-bezier(.215, .61, .355, 1);
+        text-align: center; 
+    }
+
+    .menu-open .headbar_content{
+        display: block;
+        height: 100vh;
+        background-color: #F5F5F7;
+        
+        z-index: 99;
+        padding: 0%;
+        padding-top: 20px;
+    }
+
+    .menu-open .headbar_content .headbar_element{
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .menu-open .headbar{
+        z-index: 100;
+        border-bottom: 1px solid #6E6E73;
+    }
 }
 
 /*-------------COMMERCIAL-BAR--(bar1)------------*/
