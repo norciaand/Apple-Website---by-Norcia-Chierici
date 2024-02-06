@@ -30,18 +30,21 @@ a{
 
 nav{
     background-color: #F5F5F7;
-    padding: 15px;
+    padding: 12px;
     margin: auto;
 }
 
 
 .headbar{
+    max-width: 768px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
+    display: flex;
+    justify-content:center;
 }
 
-.elemento_navbar{
+.headbar_element{
     font-size: 13px;
     margin-left: 10px;
     margin-right: 10px;
@@ -49,23 +52,23 @@ nav{
     display: inline-block;
 }
 
-.elemento_navbar:hover{
+.headbar_element:hover{
     transform:rotateY(30deg)
 }
 
-.logo_navbar{
+.headbar_img{
     height: 13px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     nav{
         padding:5px;
         
     }
     
-    .elemento_navbar{
+    .headbar_element{
         margin-left: 5px;
         margin-right: 5px;
         padding-top: 20px;
@@ -94,7 +97,7 @@ nav{
     font-weight:350;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
     .bar1 > div{
         margin-left: 2%;
         margin-right: 2%;
@@ -141,7 +144,7 @@ nav{
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .container_titolo{
         padding-left: 10px;
         padding-right: 10px;
@@ -184,7 +187,7 @@ nav{
     width: fit-content;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .box_title{
         padding-left: 0px;
         padding-right: 20px;
@@ -239,11 +242,10 @@ nav{
     left: 30px;
 }
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 768px) {
     .card{
         width: 90%;
-        height: 400px;
+        height: 90vw;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -336,7 +338,7 @@ nav{
     border-radius: 25px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .gallery2{
         display: block;
         width: 100%;
@@ -440,7 +442,7 @@ nav{
     transform: translateY(-100px);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .product_flow{
         display: block;
         width: 100%;
@@ -483,7 +485,7 @@ nav{
     scale: 1.6;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .video_product_box{
         height: 60vw;
         border-radius: 20px;
@@ -556,7 +558,7 @@ nav{
     background-image: url(images/product_pages/macbookair15/galaxy0.jpg);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .gallery_macbook{
         display: block;
         width: 100%;
@@ -725,7 +727,7 @@ nav{
     border-radius: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .form_product{
         width: 100%;
     }
@@ -787,7 +789,7 @@ nav{
     border: 2px solid rgba(0, 102, 204, 255);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .iphone_color_picker{ /*classe helper in aggiunta alla option container per i colori*/
         margin-top: 5px;
     }

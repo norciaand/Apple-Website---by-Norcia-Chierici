@@ -11,14 +11,20 @@
 
 <nav>
     <div class="headbar">
-        <span class="elemento_navbar"><a href="index.html"><img class="logo_navbar" src="images/apple-logo.svg" height="15px"></a></span>
-        <span class="elemento_navbar"><a href="index.html">Apple</a></span>
-        <span class="elemento_navbar"><a href="mac.html">Mac</a></span>
-        <span class="elemento_navbar"><a href="iphone15pro.html">iPhone</a></span>
-        <span class="elemento_navbar">iPad</span>
-        <span class="elemento_navbar">Watch</span>
-        <span class="elemento_navbar">AirPods</span>
-        <span class="elemento_navbar"><a href="catalogo.html"><img class="logo_navbar" src="images/search-icon.webp" height="15px"></a></span>
+        <div class="headbar_logo">
+            <span class="headbar_element"><a href="index.html"><img class="headbar_img" src="images/apple-logo.svg" height="15px"></a></span>
+        </div>
+        <div class="headbar_content">
+            <span class="headbar_element"><a href="index.html">Apple</a></span>
+            <span class="headbar_element"><a href="mac.html">Mac</a></span>
+            <span class="headbar_element"><a href="iphone.html">iPhone</a></span>
+            <span class="headbar_element"><a href="ipad.html">iPad</a></span>
+            <span class="headbar_element">Watch</span>
+            <span class="headbar_element">AirPods</span>
+        </div>
+        <div class="headbar_logo">
+            <span class="headbar_element"><a href="catalogo.html"><img class="headbar_img" src="images/search-icon.webp" height="15px"></a></span>
+        </div>
     </div>
 </nav>
 
@@ -42,89 +48,99 @@
             <span class="sottotitolo">con processore M2</span>
         </div>
 
+        <div class="box_table">
+            <div id="first_product">
+                <div class="image_product" id="image_product_macbookair15">
+                    <img id="img" src="images/product_pages/macbookair15/midnight0.jpg">
+                </div>
+                <span id="prezzo">€ 1.649,00</span>
+            </div>
+            <div>
+                <form class="form_product">
+                    <div class="box_title">
+                        <span class="sottotitolo">Specifiche</span>
+                    </div>
+                    <ul class="list_product_stats">
+                        <li>Chip Apple M2 con CPU 8‑core, GPU 10‑core e Neural Engine 16‑core</li>
+                        <li id="ram">8GB di memoria unificata</li>
+                        <li>Unità SSD da 256GB</li>
+                        <li>Display Liquid Retina da 15,3" con True Tone</li>
+                        <li>Porta MagSafe 3 per la ricarica</li>
+                        <li>Due porte Thunderbolt / USB 4</li>
+                        <li>Alimentatore a doppia porta USB‑C da 35W</li>
+                        <li>Magic Keyboard retroilluminata con Touch ID - Italiano</li>
+                    </ul>
+                    <div class="box_title">
+                        <span class="sottotitolo">Scegli il Colore</span>
+                    </div>
+
+                    <div class="option_container">
+                        <input class="option_product" type="radio" name="option_color" value="MIDNIGHT"
+                            id="option_color_MIDNIGHT" required>
+                        <label class="option_product_label opl2" for="option_color_MIDNIGHT"
+                            id="option_color_label_MIDNIGHT">
+                            <p>Mezzanotte</p>
+                        </label>
+
+                        <input class="option_product" type="radio" name="option_color" value="GALAXY"
+                            id="option_color_GALAXY" required>
+                        <label class="option_product_label opl2" for="option_color_GALAXY"
+                            id="option_color_label_GALAXY">
+                            <p>Galassia</p>
+                        </label>
+                    </div>
+
+                    <div class="option_container">
+                        <input class="option_product" type="radio" name="option_color" value="SILVER"
+                            id="option_color_SILVER" required>
+                        <label class="option_product_label opl2" for="option_color_SILVER"
+                            id="option_color_label_SILVER">
+                            <p>Argento</p>
+                        </label>
+
+                        <input class="option_product" type="radio" name="option_color" value="GRAY"
+                            id="option_color_GRAY" required>
+                        <label class="option_product_label opl2" for="option_color_GRAY"
+                            id="option_color_label_GRAY">
+                            <p>Grigio Siderale</p>
+                        </label>
+                    </div>
+
+                    <div class="box_title">
+                        <span class="sottotitolo">Quanta Memoria?</span>
+                    </div>
+
+                    <input class="option_product" type="radio" name="option_ram" value="8" id="option_ram8"
+                        required>
+                    <label class="option_product_label" for="option_ram8" id="option_ram8_label">
+                        <p>8GB di memoria unificata</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_ram" value="16" id="option_ram16"
+                        required>
+                    <label class="option_product_label" for="option_ram16" id="option_ram16_label">
+                        <p>16GB di memoria unificata</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_ram" value="24" id="option_ram24"
+                        required>
+                    <label class="option_product_label" for="option_ram24" id="option_ram24_label">
+                        <p>24GB di memoria unificata</p>
+                    </label>
+
+                    <button class="buy">ACQUISTA</button>
+                </form>
+            </div>
+        </div>
+
+
         <table>
             <tr>
-                <td id="first_product">
-                    <div class="image_product" id="image_product_macbookair15">
-                        <img id="img" src="images/product_pages/macbookair15/midnight0.jpg">
-                    </div>
-                    <span id="prezzo">€ 1.649,00</span>
+                <td >
+                    
                 </td>
                 <td>
-                    <form class="form_product">
-                        <div class="box_title">
-                            <span class="sottotitolo">Specifiche</span>
-                        </div>
-                        <ul class="list_product_stats">
-                            <li>Chip Apple M2 con CPU 8‑core, GPU 10‑core e Neural Engine 16‑core</li>
-                            <li id="ram">8GB di memoria unificata</li>
-                            <li>Unità SSD da 256GB</li>
-                            <li>Display Liquid Retina da 15,3" con True Tone</li>
-                            <li>Porta MagSafe 3 per la ricarica</li>
-                            <li>Due porte Thunderbolt / USB 4</li>
-                            <li>Alimentatore a doppia porta USB‑C da 35W</li>
-                            <li>Magic Keyboard retroilluminata con Touch ID - Italiano</li>
-                        </ul>
-                        <div class="box_title">
-                            <span class="sottotitolo">Scegli il Colore</span>
-                        </div>
-
-                        <div class="option_container">
-                            <input class="option_product" type="radio" name="option_color" value="MIDNIGHT"
-                                id="option_color_MIDNIGHT" required>
-                            <label class="option_product_label opl2" for="option_color_MIDNIGHT"
-                                id="option_color_label_MIDNIGHT">
-                                <p>Mezzanotte</p>
-                            </label>
-
-                            <input class="option_product" type="radio" name="option_color" value="GALAXY"
-                                id="option_color_GALAXY" required>
-                            <label class="option_product_label opl2" for="option_color_GALAXY"
-                                id="option_color_label_GALAXY">
-                                <p>Galassia</p>
-                            </label>
-                        </div>
-
-                        <div class="option_container">
-                            <input class="option_product" type="radio" name="option_color" value="SILVER"
-                                id="option_color_SILVER" required>
-                            <label class="option_product_label opl2" for="option_color_SILVER"
-                                id="option_color_label_SILVER">
-                                <p>Argento</p>
-                            </label>
-
-                            <input class="option_product" type="radio" name="option_color" value="GRAY"
-                                id="option_color_GRAY" required>
-                            <label class="option_product_label opl2" for="option_color_GRAY"
-                                id="option_color_label_GRAY">
-                                <p>Grigio Siderale</p>
-                            </label>
-                        </div>
-
-                        <div class="box_title">
-                            <span class="sottotitolo">Quanta Memoria?</span>
-                        </div>
-
-                        <input class="option_product" type="radio" name="option_ram" value="8" id="option_ram8"
-                            required>
-                        <label class="option_product_label" for="option_ram8" id="option_ram8_label">
-                            <p>8GB di memoria unificata</p>
-                        </label>
-
-                        <input class="option_product" type="radio" name="option_ram" value="16" id="option_ram16"
-                            required>
-                        <label class="option_product_label" for="option_ram16" id="option_ram16_label">
-                            <p>16GB di memoria unificata</p>
-                        </label>
-
-                        <input class="option_product" type="radio" name="option_ram" value="24" id="option_ram24"
-                            required>
-                        <label class="option_product_label" for="option_ram24" id="option_ram24_label">
-                            <p>24GB di memoria unificata</p>
-                        </label>
-
-                        <button class="buy">ACQUISTA</button>
-                    </form>
+                    
                 </td>
             </tr>
         </table>
