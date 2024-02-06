@@ -1,36 +1,25 @@
-prodotti
------------
+1) index.html -- collegare i link
+2) catalogo.html -- manca da popolare
+3) mac.html FATTO
+4) iphone.html norcia
+5) ipad.html -> thomas
+6) watch.html
+7) airpods.html
 
-IPHONE
--------
+MAC NORCIA; --> colore, ram
+   pro14
+   pro16
+   air15
 
-15 Pro FATTO
+IPHONE; --> colore , ram, archivizione
+  iphone15pro;
+  iphone15; -> popolazione della pagina, scaricare le foto per i 5 colori
 
-15 
+  iphone14 manca tutto
+  iphone13
 
-14
+IPAD;  
+  ipad pro
+  ipad air
+  ipad mini
 
-13
-
-12
-
-MACBOOK
---------
-
-MacBook Pro 14/16 M3/M3Pro FATTO
-Macbook Air 15 FATTO
-
-IPAD
--------
-ipad air
-ipad pro
-ipad mini
-
-
-WATCH
-------
-Series 9
-Ultra 2
-Hermes
-
-****
