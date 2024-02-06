@@ -67,6 +67,10 @@ nav{
         padding:5px;
         
     }
+
+    .headbar{
+        justify-content: space-between;
+    }
     
     .headbar_element{
         margin-left: 5px;
