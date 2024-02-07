@@ -26,6 +26,13 @@
             <span class="headbar_element"><a href="catalogo.html"><img class="headbar_img" src="images/search-icon.webp" height="15px"></a></span>
         </div>
     </div>
+
+    <script>
+        let item = document.querySelector('#icon_hamburgher');
+            item.addEventListener("click", function() {
+            document.body.classList.toggle('menu-open');
+        });
+    </script>
 </nav>
 
 <body>
@@ -95,6 +102,11 @@
                             id="option_color_BLACK" required>
                         <label for="option_color_BLACK">
                             <img id="color3" src="images/product_pages/iphone15pro/color_black.png">
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Galassia"
+                            id="option_color_GALAXY" required>
+                        <label for="option_color_GALAXY">
+                            <img id="color4" src="images/product_pages/ipadair/color_galaxy.png">
                         </label>
                     </div>
                     <!-- CONTROLLARE SELEZIONE GB -->
