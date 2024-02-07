@@ -65,10 +65,11 @@
                         <li>Chip Apple M1</li>
                         <li id="display">Display 10.9" Liquid Retina Ampia gamma cromatica P3 e rivestimento antiriflesso</li>
                         <li>Fotocamera frontale da 12MP con ultra‑grandangolo</li>
+                        <li>Video 4K</li>
                         <li>Connettore USB‑C</li>
-                        <li id="rom">64GB di archiviazione</li>
-                        <li>(Cavo di ricarica USB‑C?)</li>
-                        <li>Touch ID, (Dynamic Island e Tasto Azione?)</li>
+                        <li id="rom">64GB di archiviazione</li> 
+                        <li>Touch ID</li>
+                        <li>Compatibile con Apple Pencil, Compatibile con Magic Keyboard</li>
                     </ul>
                     <div class="box_title">
                         <span class="sottotitolo">Scegli il Colore</span>
@@ -124,6 +125,185 @@
             </div>
         </div>
     </div>
+
+    <script>
+        /*RADIO BUTTON*/
+        let btnsColor = document.querySelectorAll(".option_product[name='option_color']");
+        let btnsRom = document.querySelectorAll(".option_product[name='option_rom']");
+
+         /*IMMAGINI CIRCOLARI COLORE*/
+         const color0 = document.getElementById("color0");
+        const color1 = document.getElementById("color1");
+        const color2 = document.getElementById("color2");
+        const color3 = document.getElementById("color3");
+        const color4 = document.getElementById("color4");
+
+        const colorText = document.getElementById("colorTexted");
+        const picture = document.getElementById("img")                      /*immagine*/
+        const priceText = document.getElementById("prezzo"); 
+
+        const r64 = document.getElementById("option_rom64_label");
+        const r256 = document.getElementById("option_rom256_label");
+
+        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+        r64.style.border = "#0066CC 1px solid";
+
+        let color = 0;
+        let photo = 0;
+        let rom = 64;
+
+        //CAMBIARE IMMAGINI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        function loadPicture() {
+
+            if (color == 0) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone15pro/natural0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone15pro/natural1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone15pro/natural2.png";
+                        break;
+                    case 3:
+                        picture.src = "images/product_pages/iphone15pro/natural3.png";
+                        break;
+                }
+            }
+            else if (color == 1) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone15pro/blue0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone15pro/blue1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone15pro/blue2.png";
+                        break;
+                    case 3:
+                        picture.src = "images/product_pages/iphone15pro/blue3.png";
+                        break;
+                }
+            }
+            else if (color == 2) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone15pro/white0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone15pro/white1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone15pro/white2.png";
+                        break;
+                    case 3:
+                        picture.src = "images/product_pages/iphone15pro/white3.png";
+                        break;
+                }
+            }
+            else if (color == 3) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone15pro/black0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone15pro/black1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone15pro/black2.png";
+                        break;
+                    case 3:
+                        picture.src = "images/product_pages/iphone15pro/black3.png";
+                        break;
+                }
+            }
+            else if (color == 4) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone15pro/black0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone15pro/black1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone15pro/black2.png";
+                        break;
+                    case 3:
+                        picture.src = "images/product_pages/iphone15pro/black3.png";
+                        break;
+                }
+            }
+        }
+
+         /*LISTENER CLICK SULL'IMMAGINE*/
+         picture.addEventListener("click", () => {
+            if (photo == 3) {
+                photo = 0;
+            }
+            else {
+                photo++;
+            }
+            loadPicture();
+        });
+
+         /*LISTENER CAMBIO COLORE*/
+         btnsColor.forEach(btnColor => {
+            btnColor.addEventListener('click', () => {
+                let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
+                colorText.textContent = "Colore - " + coloreSelezionato;
+                color0.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color1.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color2.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color3.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color4.style.border = "2px solid rgba(0, 102, 204, 0)";
+                switch (coloreSelezionato) {
+                    case "Grigio Siderale":
+                        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 0;
+                        break;
+                    case "Blu":
+                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 1;
+                        break;
+                    case "Rosa":
+                        color2.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 2;
+                        break;
+                    case "Viola":
+                        color3.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 3;
+                        break;
+                    case "Galassia":
+                        color4.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 4;
+                        break;
+                }
+                loadPicture();
+            });
+        });
+
+        /*LISTENER CAMBIO ROM*/
+        btnsRom.forEach(btnRom => {
+            btnRom.addEventListener('change', () => {
+                let selectedRom = document.querySelector(".option_product[name='option_rom']:checked").value;
+                r64.style.border = "#828283 1px solid";
+                r256.style.border = "#828283 1px solid";
+
+                if (selectedRom == "64") {
+                    r64.style.border = "#0066CC 1px solid";
+                    romText.textContent = "64GB di archiviazione";
+                    rom = 64;
+                }
+                else if (selectedRom == "256") {
+                    r256.style.border = "#0066CC 1px solid";
+                    romText.textContent = "256GB di archiviazione";
+                    rom = 256;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
