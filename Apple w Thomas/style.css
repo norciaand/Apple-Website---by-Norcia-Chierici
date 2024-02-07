@@ -192,6 +192,8 @@ nav{
         font-size: 70px;
     }
     .sottotitolo{
+        display: inline-block;
+        width: fit-content;
         font-size: 20px;
     }
 }
@@ -227,9 +229,12 @@ nav{
 
 @media screen and (max-width: 768px) {
     .box_title{
-        padding-left: 0px;
-        padding-right: 20px;
-        padding-top: 20px;
+        text-align: center;
+        display: block;
+        max-width: 400px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -284,6 +289,8 @@ nav{
     .card{
         width: 90%;
         height: 90vw;
+        max-width: 400px;
+        max-height: 500px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -400,8 +407,10 @@ nav{
     }
 
     .card3{
+        max-height: 470px;
+        max-width: 400px;
         width: 90%;
-        height: 400px;
+        height: 90vw;
         margin-left: auto;
         margin-right: auto;
         display: block;
