@@ -137,8 +137,8 @@ nav{
 
 @media screen and (max-width: 768px){
     .bar1 > div{
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
         text-align: center;
     }
 }
@@ -297,14 +297,14 @@ nav{
     }
 
     .card_title{
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .card_text{
         display: flex;
         top: 60px;
         left: 0px;
-        margin-left: auto;
+        margin-left: 30px;
         margin-right: auto;
         font-size: 18px;
         position: relative;
@@ -489,7 +489,9 @@ nav{
 
     .card4{
         width: 90%;
-        height: 400px;
+        height: 90vw;
+        max-width: 400px;
+        max-height: 500px;
         margin-left: auto;
         margin-right: auto;
         display: block;
