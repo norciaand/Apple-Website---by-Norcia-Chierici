@@ -965,5 +965,5 @@ nav{
 
 .fade-img.in-page{
     opacity:1;
-    transform: translateX(-10vw);
+    transform: translateX(0vw);
 }
