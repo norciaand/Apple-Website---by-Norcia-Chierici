@@ -49,11 +49,11 @@
             <span class="sottotitolo" style="color: black;" id="model">iPad Pro</span>
             <span class="sottotitolo">,&nbspDecidi cosa scrivere</span>
         </div>
-        <!--CAMBIARE FOTO-->
+        <!--CAMBIARE SHFONDO FOTO-->
         <div class="box_table">
             <div id="first_product">
                 <div class="image_product">
-                    <img id="img" src="images/product_pages/ipadair/blue0.jpg">
+                    <img id="img" src="images/product_pages/ipadpro/gray0.png">
                 </div>
                 <span id="prezzo">€ 1.069</span>
             </div>
@@ -62,15 +62,201 @@
                     <div class="box_title">
                         <span class="sottotitolo">Specifiche</span>
                     </div>
-                    <!-- MODIFICARE SPECIFICHE -->
                     <ul class="list_product_stats">
-                        <li>Chip Apple M1</li>
-                        <li id="display">Display 10.9" Liquid Retina Ampia gamma cromatica P3 e rivestimento antiriflesso</li>
-                        <li>Fotocamera frontale da 12MP con ultra‑grandangolo</li>
-                        <li>Video 4K</li>
+                        <li>Chip Apple M2</li>
+                        <li id="display">Display 12.9" o da 11" Liquid Retina XDR o liquid retina<sup>2</sup></li>
+                        <li>Ampia gamma cromatica P3, rivestimento antiriflesso e tecnologia ProMotion</li>
+                        <li>Fotocamera frontale da 12MP con ultra‑grandangolo, Fotocamera TrueDepth</li>
+                        <li>Grandangolo da 12MP, Ultra‑grandangolo da 10MP, Video 4K, ProRes</li>
                         <li>Connettore USB‑C</li>
-                        <li id="rom">64GB di archiviazione</li> 
-                        <li>Touch ID</li>
+                        <li id="rom">128GB di archiviazione</li> 
+                        <li>Face ID</li>
                         <li>Compatibile con Apple Pencil, Compatibile con Magic Keyboard</li>
                     </ul>
-                    
+                    <div class="box_title">
+                        <span class="sottotitolo">Scegli il Colore</span>
+                    </div>
+                    <!-- CONTROLLARE IMMAGINI/SELEZIONI -->
+                    <div class="list_product_stats" id="colorTexted" style="margin-top: 5px;">Colore - Grigio Siderale</div>
+                    <div class="option_container iphone_color_picker">
+                        <input class="option_product" type="radio" name="option_color" value="Grigio Siderale"
+                            id="option_color_GRAY" required>
+                        <label for="option_color_GRAY">
+                            <img id="color0" src="images/product_pages/ipadair/color_gray.png"> 
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Argento"
+                            id="option_color_SILVER" required>
+                        <label for="option_color_SILVER">
+                            <img id="color1" src="images/product_pages/ipadpro/color_silver.png">
+                        </label>
+                    </div>
+                    <!-- SPAZIO -->
+                    <div class="box_title">
+                        <span class="sottotitolo">Quanto spazio ti serve?</span>
+                    </div>
+
+                    <input class="option_product" type="radio" name="option_rom" value="128" id="option_rom128"
+                        required>
+                    <label class="option_product_label" for="option_rom128" id="option_rom128_label">
+                        <p>128GB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="256" id="option_rom256"
+                        required>
+                    <label class="option_product_label" for="option_rom256" id="option_rom256_label">
+                        <p>256GB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="512" id="option_rom512"
+                        required>
+                    <label class="option_product_label" for="option_rom512" id="option_rom512_label">
+                        <p>512GB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="1T" id="option_rom1T"
+                        required>
+                    <label class="option_product_label" for="option_rom1T" id="option_rom1T_label">
+                        <p>1TB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="2T" id="option_rom2T"
+                        required>
+                    <label class="option_product_label" for="option_rom2T" id="option_rom2T_label">
+                        <p>2TB di archiviazione</p>
+                    </label>
+                    <button class="buy">ACQUISTA</button>
+                </form>
+            </div>
+        </div>
+    </div>`
+
+    <script>
+        /*RADIO BUTTON*/
+        let btnsColor = document.querySelectorAll(".option_product[name='option_color']");
+        let btnsRom = document.querySelectorAll(".option_product[name='option_rom']");
+
+         /*IMMAGINI CIRCOLARI COLORE*/
+        const color0 = document.getElementById("color0");
+        const color1 = document.getElementById("color1");
+        
+        const colorText = document.getElementById("colorTexted");
+        const picture = document.getElementById("img")                      /*immagine*/
+        const priceText = document.getElementById("prezzo"); 
+        const romText = document.getElementById("rom");
+
+        const r128 = document.getElementById("option_rom128_label");
+        const r256 = document.getElementById("option_rom256_label");
+        const r512 = document.getElementById("option_rom512_label");
+        const r1T = document.getElementById("option_rom1T_label");
+        const r2T = document.getElementById("option_rom2T_label");
+
+        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+        r128.style.border = "#0066CC 1px solid";
+
+        let color = 0;
+        let photo = 0;
+        let rom = 128
+        
+        function loadPicture() {
+
+            if (color == 0) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/ipadpro/gray0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/ipadpro/gray1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/ipadpro/gray2.png";
+                        break;
+                }
+            }
+            else if (color == 1) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/ipadpro/silver0.png";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/ipadpro/silver1.png";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/ipadpro/silver2.png";
+                        break;
+                }
+            }
+        };
+
+        /*LISTENER CLICK SULL'IMMAGINE*/
+        picture.addEventListener("click", () => {
+            if (photo == 3) {
+                photo = 0;
+            }
+            else {
+                photo++;
+            }
+            loadPicture();
+        });
+
+         /*LISTENER CAMBIO COLORE*/
+         btnsColor.forEach(btnColor => {
+            btnColor.addEventListener('click', () => {
+                let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
+                colorText.textContent = "Colore - " + coloreSelezionato;
+                color0.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color1.style.border = "2px solid rgba(0, 102, 204, 0)";
+                switch (coloreSelezionato) {
+                    case "Grigio Siderale":
+                        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 0;
+                        break;
+                    case "Argento":
+                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color = 1;
+                        break;
+                }
+                loadPicture();
+            });
+        });
+
+        /*LISTENER CAMBIO ROM*/
+        btnsRom.forEach(btnRom => {
+            btnRom.addEventListener('change', () => {
+                let selectedRom = document.querySelector(".option_product[name='option_rom']:checked").value;
+                r128.style.border = "#828283 1px solid";
+                r256.style.border = "#828283 1px solid";
+                r512.style.border = "#828283 1px solid";
+                r1T.style.border = "#828283 1px solid";
+                r2T.style.border = "#828283 1px solid";
+
+                if (selectedRom == "128") {
+                    r128.style.border = "#0066CC 1px solid";
+                    romText.textContent = "128GB di archiviazione";
+                    rom = 128;
+                }
+                else if (selectedRom == "256") {
+                    r256.style.border = "#0066CC 1px solid";
+                    romText.textContent = "256GB di archiviazione";
+                    rom = 256;
+                }
+                else if (selectedRom == "512") {
+                    r512.style.border = "#0066CC 1px solid";
+                    romText.textContent = "512GB di archiviazione";
+                    rom = 512;
+                }
+                else if (selectedRom == "1T") {
+                    r1T.style.border = "#0066CC 1px solid";
+                    romText.textContent = "1TB di archiviazione";
+                    rom = 1;
+                }
+                else if (selectedRom == "2T") {
+                    r2T.style.border = "#0066CC 1px solid";
+                    romText.textContent = "2T di archiviazione";
+                    rom = 2;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
