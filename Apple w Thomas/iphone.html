@@ -7,6 +7,7 @@
     <meta name="author" value="Andrea Norcia">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/apple-logo.svg" type="favicon/svg" />
+    <title>Apple | iPhone</title>
 </head>
 
 <nav>
@@ -38,17 +39,56 @@
         </div>
     </div>
 
-    <div class="container_titolo">
-        <span class="titolo" data-splitting="chars">iPhone</span><br>
-        <span class="sottotitolo">Un concentrato</span>
-        <span class="sottotitolo" style="color: black;"> di potenza</span>
+
+    <div class="section obs">
+        <div class="section_content">
+            <div class="section_text">iPhone</div>
+        </div>
+    </div>
+    <div class="section obs">
+        <div class="section_content">
+            <div class="section_text">Scopri i nuovi modelli di iPhone</div>
+        </div>
     </div>
 
-    <div class="video_product_box">
-        <video id="macbook_video" class="video_product" autoplay muted loop>
-            <source src="videos/mac_video_product.mp4" type="video/mp4">
-        </video>
+    <div class="panel">
+        <div class="panel_content">
+            <p class="obs fade-in">Freschissimo</p>
+            <h1 class="obs fade-in">iPhone 15<br>e iPhone 15 Plus</h1>
+            <img src="images/product_pages/iphone/iphone15.png" alt="" class="panel_img obs fade-img">
+            <a class="obs fade-in"href="iphone15.html">VISITA</a>
+        </div>
     </div>
+
+    <div class="panel dark">
+        <div class="panel_content">
+            <p class="obs fade-in">Il più potente</p>
+            <h1 class="obs fade-in">iPhone 15 Pro<br>e iPhone 15 Pro Max</h1>
+            <img src="images/product_pages/iphone/iphone15pro.png" alt="" class="panel_img obs fade-img">
+            <a class="obs fade-in"href="iphone15pro.html">VISITA</a>
+        </div>
+    </div>
+
+    <script>
+        // elements
+        var elements_to_watch = document.querySelectorAll('.obs');
+        // callback 
+        var callback = function(items){
+          items.forEach((item) => {
+            if(item.isIntersecting){
+              item.target.classList.add("in-page");
+            } else{
+              item.target.classList.remove("in-page");
+            }
+          });
+        }
+        // observer
+        var observer = new IntersectionObserver(callback, { threshold: 0.6 } );
+        // apply
+        elements_to_watch.forEach((element) => {
+          observer.observe(element); 
+        });
+    </script>
 
 </body>
 </html>

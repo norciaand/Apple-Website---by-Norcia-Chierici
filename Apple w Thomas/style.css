@@ -32,6 +32,8 @@ nav{
     background-color: #F5F5F7;
     padding: 12px;
     margin: auto;
+    position: relative;
+    z-index: 100;
 }
 
 
@@ -120,6 +122,8 @@ nav{
 .bar1{
     background-color:white;
     height: fit-content;
+    position: relative;
+    z-index: 99;
 }
 
 .bar1 > div {
@@ -843,4 +847,143 @@ nav{
     .iphone_color_picker{ /*classe helper in aggiunta alla option container per i colori*/
         margin-top: 5px;
     }
+}
+
+
+/*-----------------IPHONE PAGE---------------*/
+/* SECTION */
+
+.background{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.section{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+}
+
+
+.section_content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    top:0;
+    left: 0;;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_text{
+    color: white;
+    display: block;
+    position: relative;
+    font-size: 7vw;
+    font-weight: 600;
+    text-align: center;
+    width: fit-content;
+    max-width: 70vw;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(.215, .61, .355, 1);
+}
+
+.section.in-page .section_text{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/*PANEL*/
+
+.panel{
+    height: auto;
+    width: 100%;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.panel_content{
+    width: 100%;
+    padding: 10% 15% 10% 15%;
+}
+
+.panel_content p{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.panel_content h1{
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
+}
+
+.panel_content a{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-color: #0066CC;
+    color: white;
+    width: fit-content;
+    padding: 7px 20px;
+    border-radius: 20px;
+    transition: 200ms ease-in-out;
+}
+
+.panel_content a:hover{
+    transform: scale(1.025);
+
+}
+
+.fade-in{
+    opacity:0;
+    transform: translateY(20vh);
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.fade-in.in-page{
+    opacity:1;
+    transform: translateY(0vh);
+}
+
+.panel_img{
+    width: 65vw;
+    position: relative;
+    display: block;
+    z-index: 0;
+    margin: 250px auto 0 auto;
+}
+
+.fade-img{
+    opacity: 0;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    transform: translateX(-20vw);
+}
+
+.fade-img.in-page{
+    opacity:1;
+    transform: translateX(-00vw);
+}
+
+.panel.dark{
+    /* background-color: rgb(20, 20, 20); */
+    background-color: black;
+    color: white;
 }
