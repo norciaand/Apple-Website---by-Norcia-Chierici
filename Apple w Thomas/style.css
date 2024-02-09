@@ -905,7 +905,7 @@ nav{
 /*PANEL*/
 
 .panel{
-    height: 200vh;
+    height: auto;
     width: 100%;
     position: relative;
     display:flex;
@@ -915,7 +915,7 @@ nav{
 
 .panel_content{
     width: 100%;
-    padding: 10% 15% 0 15%;
+    padding: 10% 15% 10% 15%;
 }
 
 .panel_content p{
@@ -933,6 +933,22 @@ nav{
     font-weight: 700;
     position: relative;
     z-index: 2;
+}
+
+.panel_content a{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    background-color: #0066CC;
+    color: white;
+    width: fit-content;
+    padding: 7px 20px;
+    border-radius: 20px;
+    transition: 200ms ease-in-out;
+}
+
+.panel_content a:hover{
+    transform: scale(1.025);
 
 }
 
@@ -948,7 +964,7 @@ nav{
 }
 
 .panel_img{
-    width: 60vw;
+    width: 65vw;
     position: relative;
     display: block;
     z-index: 0;
@@ -959,11 +975,16 @@ nav{
 .fade-img{
     opacity: 0;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
-    transform: translateX(-18vw);
-    
+    transform: translateX(-20vw);
 }
 
 .fade-img.in-page{
     opacity:1;
-    transform: translateX(0vw);
+    transform: translateX(-00vw);
+}
+
+.panel.dark{
+    /* background-color: rgb(20, 20, 20); */
+    background-color: black;
+    color: white;
 }
