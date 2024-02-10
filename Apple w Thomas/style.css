@@ -976,3 +976,15 @@ nav{
     background-color: black;
     color: white;
 }
+
+nav.dark{
+    background-color: rgb(15, 15, 15);
+}
+
+nav.dark a, nav.dark span{
+    color: white;
+}
+
+nav.dark img {
+    filter: invert(100%);
+}
