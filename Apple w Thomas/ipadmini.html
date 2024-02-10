@@ -94,12 +94,12 @@
                         <input class="option_product" type="radio" name="option_color" value="Viola"
                             id="option_color_PURPLE" required>
                         <label for="option_color_PURPLE">
-                            <img id="color1" src="images/product_pages/ipadmini/color_purple.png">
+                            <img id="color2" src="images/product_pages/ipadmini/color_purple.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Galassia"
                             id="option_color_GALAXY" required>
                         <label for="option_color_GALAXY">
-                            <img id="color1" src="images/product_pages/ipadmini/color_galaxy.png">
+                            <img id="color3" src="images/product_pages/ipadmini/color_galaxy.png">
                         </label>
                     </div>
                     <!-- SPAZIO -->
@@ -208,7 +208,7 @@
 
         /*LISTENER CLICK SULL'IMMAGINE*/
         picture.addEventListener("click", () => {
-            if (photo == 3) {
+            if (photo == 2) {
                 photo = 0;
             }
             else {
@@ -236,11 +236,11 @@
                         color = 1;
                         break;
                     case "Viola":
-                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color2.style.border = "2px solid rgba(0, 102, 204, 255)";
                         color = 2;
                         break;
                     case "Galassia":
-                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color3.style.border = "2px solid rgba(0, 102, 204, 255)";
                         color = 3;
                         break;
                 }
