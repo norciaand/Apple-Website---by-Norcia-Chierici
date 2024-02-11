@@ -2,33 +2,33 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-*{
+* {
     font-family: "Inter", sans-serif;
 }
 
-body{
+body {
     margin: 0px;
     background-color: #F5F5F7;
     letter-spacing: -0.5px;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.blue_link{
+.blue_link {
     color: #0066CC;
     text-decoration: none;
 }
 
-.blue_link:hover{
+.blue_link:hover {
     text-decoration: underline;
 }
 
 /*-----------------NAVBAR------------------*/
 
-nav{
+nav {
     background-color: #F5F5F7;
     padding: 12px;
     margin: auto;
@@ -37,16 +37,16 @@ nav{
 }
 
 
-.headbar{
+.headbar {
     max-width: 768px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
-.headbar_element{
+.headbar_element {
     font-size: 13px;
     margin-left: 10px;
     margin-right: 10px;
@@ -54,27 +54,27 @@ nav{
     display: inline-block;
 }
 
-.headbar_element:hover{
-    transform:rotateY(30deg)
+.headbar_element:hover {
+    transform: rotateY(30deg)
 }
 
-.headbar_img{
+.headbar_img {
     height: 13px;
     margin-left: 5px;
     margin-right: 5px;
 }
 
 @media screen and (max-width: 768px) {
-    nav{
-        padding:5px;
+    nav {
+        padding: 5px;
     }
 
-    .headbar{
+    .headbar {
         justify-content: space-between;
         z-index: 100;
     }
-    
-    .headbar_element{
+
+    .headbar_element {
         margin-left: 5px;
         margin-right: 5px;
         padding-top: 20px;
@@ -83,35 +83,35 @@ nav{
         transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
-    .headbar_content{   
-        position: absolute; 
-        top:67px;
-        left:0px; 
+    .headbar_content {
+        position: absolute;
+        top: 67px;
+        left: 0px;
         width: 100%;
-        height: 0vh; 
+        height: 0vh;
         overflow: hidden;
         transition: all 500ms cubic-bezier(.215, .61, .355, 1);
-        text-align: center; 
+        text-align: center;
     }
 
-    .menu-open .headbar_content{
+    .menu-open .headbar_content {
         display: block;
         height: 100vh;
         background-color: #F5F5F7;
-        
+
         z-index: 99;
         padding: 0%;
         padding-top: 20px;
     }
 
-    .menu-open .headbar_content .headbar_element{
+    .menu-open .headbar_content .headbar_element {
         margin: 0 auto;
         margin-bottom: 15px;
         font-size: 16px;
         font-weight: 600;
     }
 
-    .menu-open .headbar{
+    .menu-open .headbar {
         z-index: 100;
         border-bottom: 1px solid #6E6E73;
     }
@@ -119,14 +119,14 @@ nav{
 
 /*-------------COMMERCIAL-BAR--(bar1)------------*/
 
-.bar1{
-    background-color:white;
+.bar1 {
+    background-color: white;
     height: fit-content;
     position: relative;
     z-index: 99;
 }
 
-.bar1 > div {
+.bar1>div {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -134,13 +134,13 @@ nav{
     padding-bottom: 20px;
 }
 
-.bar1 > div > span{
+.bar1>div>span {
     font-size: 14px;
-    font-weight:350;
+    font-weight: 350;
 }
 
-@media screen and (max-width: 768px){
-    .bar1 > div{
+@media screen and (max-width: 768px) {
+    .bar1>div {
         margin-left: 4%;
         margin-right: 4%;
         text-align: center;
@@ -149,53 +149,54 @@ nav{
 
 /*--------------------TITOLI------------------*/
 
-.container_titolo{
+.container_titolo {
     text-align: center;
-    width:auto;
+    width: auto;
     background-color: white;
     padding: 50px;
     background-color: #F5F5F7;
 }
 
-.sottotitolo{
+.sottotitolo {
     font-size: 30px;
     color: #6E6E73;
     font-weight: 600;
 }
 
-.titolo{
-	font-size: 100px;
-	text-decoration: none;
-	font-weight: 100;
-	letter-spacing: -3px;
-	animation: weight 2s infinite;
-	animation-delay: calc(var(--char-index) * 150ms);
+.titolo {
+    font-size: 100px;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: -3px;
+    animation: weight 2s infinite;
+    animation-delay: calc(var(--char-index) * 150ms);
 }
 
 @keyframes weight {
-	from {
-		font-weight: 200;
-	}
+    from {
+        font-weight: 200;
+    }
 
-	50% {
-		font-weight: 900;
-	}
+    50% {
+        font-weight: 900;
+    }
 
-	to {
-		font-weight: 200;
-	}
+    to {
+        font-weight: 200;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container_titolo{
+    .container_titolo {
         padding-left: 10px;
         padding-right: 10px;
     }
 
-    .titolo{
+    .titolo {
         font-size: 70px;
     }
-    .sottotitolo{
+
+    .sottotitolo {
         display: inline-block;
         width: fit-content;
         font-size: 20px;
@@ -204,25 +205,25 @@ nav{
 
 /*-----------------PARTI DELLA PAGINA-------------*/
 
-.box{
+.box {
     padding-left: 7%;
     padding-right: 7%;
 }
 
-.box_title{
+.box_title {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
 }
 
-.gallery{
+.gallery {
     height: fit-content;
     overflow: auto;
     white-space: nowrap;
     margin-bottom: 40px;
 }
 
-.gallery2{
+.gallery2 {
     padding-top: 5px;
     margin-left: auto;
     margin-right: auto;
@@ -232,7 +233,7 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-    .box_title{
+    .box_title {
         text-align: center;
         display: block;
         max-width: 400px;
@@ -245,26 +246,26 @@ nav{
 
 /*--------------CARD SCHERMATA BENVENUTO-------------------*/
 
-.card{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+.card {
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     width: 400px;
-    height: 500px;  
-    background: white;  
+    height: 500px;
+    background: white;
     border-radius: 40px;
-    display:inline-block;
+    display: inline-block;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.025);
     border-radius: 20px;
 }
 
-.card_uptitle{
+.card_uptitle {
     width: fit-content;
     font-size: 14px;
     position: relative;
@@ -272,7 +273,7 @@ nav{
     left: 30px;
 }
 
-.card_title{
+.card_title {
     width: fit-content;
     font-size: 30px;
     font-weight: 600;
@@ -281,7 +282,7 @@ nav{
     left: 30px;
 }
 
-.card_text{
+.card_text {
     width: fit-content;
     font-size: 18px;
     position: relative;
@@ -290,7 +291,7 @@ nav{
 }
 
 @media screen and (max-width: 768px) {
-    .card{
+    .card {
         width: 90%;
         height: 90vw;
         max-width: 400px;
@@ -303,15 +304,15 @@ nav{
         background-repeat: no-repeat;
     }
 
-    .card_uptitle{
+    .card_uptitle {
         font-size: 14px;
     }
 
-    .card_title{
+    .card_title {
         font-size: 24px;
     }
 
-    .card_text{
+    .card_text {
         display: flex;
         top: 60px;
         left: 0px;
@@ -325,75 +326,75 @@ nav{
 
 /*-----------------CARD1 DELLA SCHERMATA PRINCIPALE---------------*/
 
-#iphone15pro_c{
-    color:white;
+#iphone15pro_c {
+    color: white;
     background-image: url(images/card/iphone15pro.jpeg);
 }
 
-#macbookpro_c{
+#macbookpro_c {
     background-image: url(images/card/macbookpro.jpeg);
 }
 
-#iphone15_c{
+#iphone15_c {
     background-image: url(images/card/iphone15.jpeg);
 }
 
-#watch_c{
+#watch_c {
     color: white;
     background-image: url(images/card/watch.jpeg);
 }
 
-#macbookair_c{
+#macbookair_c {
     background-image: url(images/card/macbookair.jpeg);
 }
 
-#ipad_c{
+#ipad_c {
     background-image: url(images/card/ipad.jpeg);
 }
 
-.card2{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+.card2 {
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 400px;  
+    width: 400px;
     height: 200px;
-    background: white;  
+    background: white;
     border-radius: 30px;
     display: inline-block;
     transition: 200ms transform ease-in-out;
 }
 
-.card2:hover{
+.card2:hover {
     transform: rotateZ(1deg);
 }
 
-.card3{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+.card3 {
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 470px; 
-    height: 470px;  
-    background: white;  
+    width: 470px;
+    height: 470px;
+    background: white;
     border-radius: 40px;
     display: inline-block;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 }
 
-.card3:hover{
+.card3:hover {
     transform: scale(1.025);
     border-radius: 25px;
 }
 
 @media screen and (max-width: 768px) {
-    .gallery2{
+    .gallery2 {
         display: block;
         width: 100%;
     }
 
-    .card2{
+    .card2 {
         width: 90%;
         max-width: 350px;
         margin-left: auto;
@@ -402,7 +403,7 @@ nav{
         display: block;
     }
 
-    .card2 .card_text{
+    .card2 .card_text {
         display: flex;
         top: 60px;
         left: 0px;
@@ -410,7 +411,7 @@ nav{
         position: relative;
     }
 
-    .card3{
+    .card3 {
         max-height: 470px;
         max-width: 400px;
         width: 90%;
@@ -424,62 +425,65 @@ nav{
     }
 }
 
-#specialist_c{
+#specialist_c {
     background-image: url(images/card3/specialist.jpeg);
 }
 
-#storesession_c{
+#storesession_c {
     background-image: url(images/card3/storesession.jpeg);
 }
 
-.product_flow{
+.product_flow {
     margin-left: auto;
     margin-right: auto;
-    background-color:#F5F5F7;
+    background-color: #F5F5F7;
     width: fit-content;
     display: flex;
 }
 
 
-.card4{
-    box-shadow: 1px 1px 5px rgba(163, 163, 163,0); 
+.card4 {
+    box-shadow: 1px 1px 5px rgba(163, 163, 163, 0);
+    width: 400px;
+    /*320 x 400*/
+    height: 500px;
+    background: white;
+    display: block;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    overflow: hidden;
+
+    /* border: 1px solid #6E6E73; */
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 400px;  /*320 x 400*/
-    height: 500px;  
-    background: white;  
     border-radius: 40px;
-    display:block;
-    transition: 200ms transform ease-in-out,  box-shadow 200ms ease-in-out;
-    overflow: hidden;
 }
 
-.card4:hover{
-    transform: scale(1.025);
-    box-shadow: 0px 0px 10px rgb(163, 163, 163); 
+.card4:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 0px 10px rgb(163, 163, 163);
 }
 
-.card4_uptitle{
+.card4_uptitle {
     width: fit-content;
     font-size: 14px;
-    position:relative;
+    position: relative;
     top: 30px;
     left: 30px;
 }
 
-.card4_title{
+.card4_title {
     width: fit-content;
     font-size: 35px;
     font-weight: 600;
     position: relative;
     top: 40px;
     left: 30px;
-    width:fit-content;
+    width: fit-content;
 }
 
-.card4_price{
+.card4_price {
     float: right;
     width: fit-content;
     font-size: 35px;
@@ -490,17 +494,18 @@ nav{
     transition: 200ms transform ease-in-out;
 }
 
-.card4:hover .card4_price{
+.card4:hover .card4_price {
     transform: translateY(-100px);
 }
 
+
 @media screen and (max-width: 768px) {
-    .product_flow{
+    .product_flow {
         display: block;
         width: 100%;
     }
 
-    .card4{
+    .card4 {
         width: 90%;
         height: 90vw;
         max-width: 400px;
@@ -515,13 +520,45 @@ nav{
     }
 }
 
+/* ----------------PRODOTTI DEL CATALOGO---------------- */
+
+#c4_iphone15pro {
+    background-image: url(images/card/iphone15pro.jpeg);
+    color: white;
+}
+
+#c4_iphone15 {
+    background-image: url(images/card/iphone15.jpeg);
+}
+
+#c4_ipadpro {
+    background-image: url(images/card/ipadpro.jpg);
+    color: white;
+}
+
+#c4_iphone14 {
+    background-image: url(images/card/iphone14.jpg);
+}
+
+#c4_macbookair {
+    background-image: url(images/card/macbookair.jpeg);
+}
+
+#c4_iphone13 {
+    background-image: url(images/card/iphone13.jpg);
+}
+
+#c4_macbookpro
+{
+    background-image: url(images/card/macbookpro.jpeg);
+}
 /*------------------PRODUCT TYPE-----------------------------*/
-.video_product_box{
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
-    margin-left:  7%;
+.video_product_box {
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
+    margin-left: 7%;
     margin-right: 7%;
     height: 800px;
-    overflow:hidden;
+    overflow: hidden;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 50px;
@@ -530,26 +567,27 @@ nav{
     transition: 200ms border-radius ease-in-out, 200ms transform ease-in-out;
 }
 
-.video_product_box:hover{
+.video_product_box:hover {
     transform: scale(1.025);
     border-radius: 0px;
 }
 
-.video_product{
+.video_product {
     scale: 1.6;
 }
 
 @media screen and (max-width: 768px) {
-    .video_product_box{
+    .video_product_box {
         height: 60vw;
         border-radius: 20px;
     }
-    .video_product{
+
+    .video_product {
         scale: 1.4;
     }
 }
 
-.gallery_macbook{
+.gallery_macbook {
     display: flex;
     height: fit-content;
     white-space: nowrap;
@@ -562,12 +600,12 @@ nav{
 }
 
 
-.card_macbook{ 
-    background-color:white;
+.card_macbook {
+    background-color: white;
     height: 15vw;
     width: 24vw;
     display: block;
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -575,18 +613,18 @@ nav{
     margin-right: 15px;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 
-    background-size:60%;
-    background-position:center;
+    background-size: 60%;
+    background-position: center;
     background-position-y: 0px;
     background-repeat: no-repeat;
 }
 
-.card_macbook:hover{
+.card_macbook:hover {
     transform: scale(1.025);
     border-radius: 0px;
 }
 
-.card_macbook_title{
+.card_macbook_title {
     width: fit-content;
     font-size: 24px;
     font-weight: 600;
@@ -596,29 +634,44 @@ nav{
     transition: 500ms background-color ease-in-out;
 }
 
-.card_macbook:hover .card_macbook_title{
+.card_macbook:hover .card_macbook_title {
     background-color: rgb(224, 224, 224);
 }
 
-#macbookpro14{
-    background-image: url(images/product_pages/macbookpro14/silver0.png);   
+#macbookpro14 {
+    background-image: url(images/product_pages/macbookpro14/silver0.png);
 }
 
-#macbookpro16{
-    background-image: url(images/product_pages/macbookpro16/black1.png); 
+#macbookpro16 {
+    background-image: url(images/product_pages/macbookpro16/black1.png);
 }
 
-#macbookair15{
+#macbookair15 {
     background-image: url(images/product_pages/macbookair15/galaxy0.jpg);
 }
 
+#ipadair {
+    background-image: url(images/product_pages/ipadair/purple0.png);
+    background-size: contain;
+}
+
+#ipadpro {
+    background-image: url(images/product_pages/ipadpro/gray0.png);
+    background-size: contain;
+}
+
+#ipadmini {
+    background-image: url(images/product_pages/ipadmini/galaxy0.png);
+    background-size: contain;
+}
+
 @media screen and (max-width: 768px) {
-    .gallery_macbook{
+    .gallery_macbook {
         display: block;
         width: 100%;
     }
 
-    .card_macbook{
+    .card_macbook {
         width: 90%;
         height: 350px;
         margin-left: auto;
@@ -630,88 +683,100 @@ nav{
         margin-bottom: 20px
     }
 
-    .card_macbook_title{
+    .card_macbook_title {
         top: 301px;
     }
 }
 
 /*----------------PRODUCT PAGE--------------------*/
-.box_product{       /*scatola che contiene tutto*/ 
+.box_product {
+    /*scatola che contiene tutto*/
     margin-left: 7%;
     margin-right: 7%;
 }
 
-.box_table{
+.box_table {
     display: flex;
     margin-bottom: 60px;
 }
 
 
-#first_product{ /*item a sinistra, che contiene la foto e che sta in alto*/
+#first_product {
+    /*item a sinistra, che contiene la foto e che sta in alto*/
     vertical-align: top;
 }
 
-.image_product{ /*container dell'immagine*/
-    padding:20px;
+.image_product {
+    /*container dell'immagine*/
+    padding: 20px;
 }
 
-.image_product > img { /*immagine*/
-    width: 900px ;
+.image_product>img {
+    /*immagine*/
+    width: 900px;
     max-width: 100%;
     height: auto;
     border-radius: 30px;
     transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
 }
 
-.image_product > img:hover { 
+.image_product>img:hover {
     transform: scale(1.025);
     border-radius: 15px;
 }
 
-#prezzo{    /*stringa del prezzo*/
+#prezzo {
+    /*stringa del prezzo*/
     display: flex;
     justify-content: center;
     font-size: 30px;
     font-weight: 900;
 }
 
-.form_product{  /*item a destra*/
+.form_product {
+    /*item a destra*/
     width: 85%;
 }
 
-.list_product_stats{    /*lista delle specifiche*/
+.list_product_stats {
+    /*lista delle specifiche*/
     list-style-type: none;
     padding-left: 20px;
 }
 
-.list_product_stats > li {  /*singolo elemento della lista*/
+.list_product_stats>li {
+    /*singolo elemento della lista*/
     padding-bottom: 10px;
 }
 
-.option_container{  /*container di quelle opzioni messe in linea (FLEXBOX)*/
+.option_container {
+    /*container di quelle opzioni messe in linea (FLEXBOX)*/
     display: flex;
 }
 
-.option_product{    /*tutti i radio button*/
+.option_product {
+    /*tutti i radio button*/
     display: none;
 }
 
-.option_product_label{  /*pulsante effettivo dei radiobutton*/
-    background-color:white;
+.option_product_label {
+    /*pulsante effettivo dei radiobutton*/
+    background-color: white;
     display: block;
     height: 90px;
     margin: 10px;
     border-radius: 20px;
-    border:#828283 1px solid;
+    border: #828283 1px solid;
     width: 100%;
     transition: 200ms background-color ease-in-out;
 }
 
-.option_product_label:hover{
+.option_product_label:hover {
     background-color: #f8f8f8;
 }
 
-.opl2{  /*classe di label helper da aggiungere nel caso si parli di flexbox*/
+.opl2 {
+    /*classe di label helper da aggiungere nel caso si parli di flexbox*/
     position: relative;
     margin-left: 10px;
     margin-right: 0px;
@@ -719,44 +784,49 @@ nav{
     margin-bottom: 0px;
 }
 
-.opl2l{ /*classe helper scelta contrapposta SX (es scelta 15pro/15promax)*/
+.opl2l {
+    /*classe helper scelta contrapposta SX (es scelta 15pro/15promax)*/
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 0px;
     border-radius: 20px 0px 0px 20px;
     padding-right: 5px;
-    border:#0066cc00 1px solid;
+    border: #0066cc00 1px solid;
 }
 
-.opl2r{ /*classe helper scelta contrapposta DX*/
+.opl2r {
+    /*classe helper scelta contrapposta DX*/
     margin-left: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     border-radius: 0px 20px 20px 0px;
     padding-left: 5px;
-    border:#0066cc00 1px solid;
+    border: #0066cc00 1px solid;
 }
 
-.option_product_label > p{ /*testo dentro alle label*/
-    margin:0;
+.option_product_label>p {
+    /*testo dentro alle label*/
+    margin: 0;
     display: flex;
     height: 90px;
-    align-items:center;
-    justify-content:baseline;
+    align-items: center;
+    justify-content: baseline;
     font-weight: 500;
     font-size: 20px;
     padding-left: 20px;
     font-weight: 600;
 }
 
-.opl2l > p, .opl2r > p {
+.opl2l>p,
+.opl2r>p {
     justify-content: center;
     padding: 0;
 }
 
-.buy{   /*PULSTANTE ACQUISTA*/
+.buy {
+    /*PULSTANTE ACQUISTA*/
     background-color: #0066CC;
     color: white;
     height: 40px;
@@ -772,44 +842,49 @@ nav{
     top: 90%;
     right: 18%;
     transition: 200ms all ease-in-out;
-    box-shadow: 1px 1px 5px rgb(163, 163, 163); 
+    box-shadow: 1px 1px 5px rgb(163, 163, 163);
 }
 
-.buy:hover{
+.buy:hover {
     transform: scale(1.025);
     box-shadow: none;
     border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    .form_product{
+    .form_product {
         width: 100%;
     }
-    .box_table{
+
+    .box_table {
         display: block;
     }
-    .list_product_stats{
+
+    .list_product_stats {
         text-align: center;
         margin-right: 10px;
     }
-    .option_product_label{
+
+    .option_product_label {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
     }
-    .buy{
+
+    .buy {
         position: relative;
-        top:auto;
-        left:auto;
+        top: auto;
+        left: auto;
         right: auto;
         margin: 30px auto 30px auto;
     }
 }
 
 /*-------------IPHONE 15 PRO--------------------*/
-.iphone_color_picker{ /*classe helper in aggiunta alla option container per i colori*/
+.iphone_color_picker {
+    /*classe helper in aggiunta alla option container per i colori*/
     margin-top: 20px;
     background-color: white;
     margin-left: 20px;
@@ -828,52 +903,52 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
 
-    border-radius:90px;
+    border-radius: 90px;
     padding: 2px;
 
     border: 2px solid rgba(0, 102, 204, 0);
 }
 
-.iphone_color_picker img:hover{
+.iphone_color_picker img:hover {
     transform: scale(1.025);
     border: 2px solid #afadad
 }
 
-.iphone_color_picker img:active{
+.iphone_color_picker img:active {
     border: 2px solid rgba(0, 102, 204, 255);
 }
 
 @media screen and (max-width: 768px) {
-    .iphone_color_picker{ /*classe helper in aggiunta alla option container per i colori*/
+    .iphone_color_picker {
+        /*classe helper in aggiunta alla option container per i colori*/
         margin-top: 5px;
     }
 }
 
 
-/*-----------------IPHONE PAGE---------------*/
+/*--------------------IPHONE PAGE----------------------*/
 /* SECTION */
 
 
-.section{
+.section {
     width: 100%;
     height: 100vh;
     background-color: black;
     z-index: 1;
 }
 
-
-.section_content{
+.section_content {
     width: 100%;
     height: 100vh;
     display: flex;
     position: fixed;
-    top:0;
-    left: 0;;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
 }
 
-.section_text{
+.section_text {
     color: white;
     display: block;
     position: relative;
@@ -886,28 +961,29 @@ nav{
     transition: all 0.8s cubic-bezier(.215, .61, .355, 1);
 }
 
-.section.in-page .section_text{
+.section.in-page .section_text {
     transform: scale(1.2);
     opacity: 1;
 }
 
 /*PANEL*/
 
-.panel{
-    height: auto;
+.panel {
+    height: 130vh;
     width: 100%;
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
     background-color: white;
 }
 
-.panel_content{
+.panel_content {
     width: 100%;
     padding: 10% 15% 10% 15%;
 }
 
-.panel_content p{
+/*TESTO SUPERIORE*/
+.panel_content p { 
     font-size: 25px;
     margin: 0;
     padding: 0;
@@ -915,8 +991,9 @@ nav{
     z-index: 2;
 }
 
-.panel_content h1{
-    font-size: 70px;
+/* TITOLO */
+.panel_content h1 {
+    font-size:65px;
     margin: 0;
     padding: 0;
     font-weight: 700;
@@ -924,7 +1001,8 @@ nav{
     z-index: 2;
 }
 
-.panel_content a{
+/* LINK */
+.panel_content a {
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -936,55 +1014,96 @@ nav{
     transition: 200ms ease-in-out;
 }
 
-.panel_content a:hover{
+.panel_content a:hover {
     transform: scale(1.025);
-
 }
 
-.fade-in{
-    opacity:0;
+
+.fade-in {
+    opacity: 0;
     transform: translateY(20vh);
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
-.fade-in.in-page{
-    opacity:1;
+.fade-in.in-page {
+    opacity: 1;
     transform: translateY(0vh);
 }
 
-.panel_img{
+.panel_img {
     width: 65vw;
     position: relative;
     display: block;
     z-index: 0;
-    margin: 250px auto 0 auto;
+    margin: 1vh auto 0 auto;
 }
 
-.fade-img{
+.fade-img {
     opacity: 0;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
     transform: translateX(-20vw);
 }
 
-.fade-img.in-page{
-    opacity:1;
+.fade-img.in-page {
+    opacity: 1;
     transform: translateX(-00vw);
 }
 
-.panel.dark{
+@media (max-width: 768px) {
+    .panel{
+        height: 100vh;
+    }
+    .panel_content h1{
+        font-size: 40px;
+        margin-bottom: 30vh;
+    }
+
+    .panel_content p{
+        font-size: 20px;
+    }
+
+    .panel_content a{
+        position: relative;
+    }
+
+    .fade-img {
+        opacity: 0;
+        transition: all 1s cubic-bezier(.215, .61, .355, 1);
+        transform: translateX(-20vw), scale(1);
+        height: 20vh;
+    }
+    
+    .fade-img.in-page {
+        opacity: 1;
+        width: 100%;
+        transform: translateX(-00vw), scale(2);
+        margin-bottom: 10vh;
+    }
+}
+
+/* DARK MODE */
+
+.panel.dark {
     /* background-color: rgb(20, 20, 20); */
     background-color: black;
     color: white;
 }
 
-nav.dark{
+nav.dark {
     background-color: rgb(15, 15, 15);
 }
 
-nav.dark a, nav.dark span{
+nav.dark a,
+nav.dark span {
     color: white;
 }
 
 nav.dark img {
     filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+    nav.dark .headbar_content{
+        background-color:rgb(15, 15, 15);
+    }
 }
