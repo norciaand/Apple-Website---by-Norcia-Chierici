@@ -81,12 +81,12 @@
                         <input class="option_product" type="radio" name="option_color" value="Grigio Siderale"
                             id="option_color_GRAY" required>
                         <label for="option_color_GRAY">
-                            <img id="color0" src="images/product_pages/ipadair/color_gray.png"> 
+                            <img class="color_picker_off" id="color0" src="images/product_pages/ipadair/color_gray.png"> 
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Argento"
                             id="option_color_SILVER" required>
                         <label for="option_color_SILVER">
-                            <img id="color1" src="images/product_pages/ipadpro/color_silver.png">
+                            <img id="color1" class="color_picker_off" src="images/product_pages/ipadpro/color_silver.png">
                         </label>
                     </div>
                     <!-- SPAZIO -->
@@ -149,7 +149,7 @@
         const r1T = document.getElementById("option_rom1T_label");
         const r2T = document.getElementById("option_rom2T_label");
 
-        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+        color0.classList.add("color_picker_on");
         r128.style.border = "#0066CC 1px solid";
 
         let color = 0;
@@ -202,15 +202,15 @@
             btnColor.addEventListener('click', () => {
                 let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
                 colorText.textContent = "Colore - " + coloreSelezionato;
-                color0.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color1.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color0.classList.remove("color_picker_on");
+                color1.classList.remove("color_picker_on");
                 switch (coloreSelezionato) {
                     case "Grigio Siderale":
-                        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color0.classList.add("color_picker_on");
                         color = 0;
                         break;
                     case "Argento":
-                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color1.classList.add("color_picker_on");
                         color = 1;
                         break;
                 }

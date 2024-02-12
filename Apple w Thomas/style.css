@@ -894,7 +894,7 @@ nav {
     justify-content: center;
 }
 
-.iphone_color_picker img {
+.color_picker_off{
     width: 40px;
     margin-left: 13px;
     margin-right: 13px;
@@ -906,15 +906,16 @@ nav {
     border-radius: 90px;
     padding: 2px;
 
-    border: 2px solid rgba(0, 102, 204, 0);
+    border: 2px solid #afadad00
 }
 
-.iphone_color_picker img:hover {
+.color_picker_off:hover{
     transform: scale(1.025);
     border: 2px solid #afadad
 }
 
-.iphone_color_picker img:active {
+
+.color_picker_on {
     border: 2px solid rgba(0, 102, 204, 255);
 }
 

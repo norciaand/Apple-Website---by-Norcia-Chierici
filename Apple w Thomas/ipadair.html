@@ -80,27 +80,27 @@
                         <input class="option_product" type="radio" name="option_color" value="Grigio Siderale"
                             id="option_color_GRAY" required>
                         <label for="option_color_GRAY">
-                            <img id="color0" src="images/product_pages/ipadair/color_gray.png">
+                            <img class="color_picker_off" id="color0" src="images/product_pages/ipadair/color_gray.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Blu"
                             id="option_color_BLUE" required>
                         <label for="option_color_BLUE">
-                            <img id="color1" src="images/product_pages/ipadair/color_blue.png">
+                            <img class="color_picker_off" id="color1" src="images/product_pages/ipadair/color_blue.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Rosa"
                             id="option_color_PINK" required>
                         <label for="option_color_PINK">
-                            <img id="color2" src="images/product_pages/ipadair/color_pink.png">
+                            <img class="color_picker_off" id="color2" src="images/product_pages/ipadair/color_pink.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Viola"
                             id="option_color_PURPLE" required>
                         <label for="option_color_PURPLE">
-                            <img id="color3" src="images/product_pages/ipadair/color_purple.png">
+                            <img class="color_picker_off" id="color3" src="images/product_pages/ipadair/color_purple.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Galassia"
                             id="option_color_GALAXY" required>
                         <label for="option_color_GALAXY">
-                            <img id="color4" src="images/product_pages/ipadair/color_galaxy.png">
+                            <img class="color_picker_off" id="color4" src="images/product_pages/ipadair/color_galaxy.png">
                         </label>
                     </div>
                     <!-- CONTROLLARE SELEZIONE GB -->
@@ -145,7 +145,7 @@
         const r64 = document.getElementById("option_rom64_label");
         const r256 = document.getElementById("option_rom256_label");
 
-        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+        color0.classList.add("color_picker_on")
         r64.style.border = "#0066CC 1px solid";
 
         let color = 0;
@@ -239,30 +239,30 @@
             btnColor.addEventListener('click', () => {
                 let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
                 colorText.textContent = "Colore - " + coloreSelezionato;
-                color0.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color1.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color2.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color3.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color4.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color0.classList.remove("color_picker_on");
+                color1.classList.remove("color_picker_on");
+                color2.classList.remove("color_picker_on");
+                color3.classList.remove("color_picker_on");
+                color4.classList.remove("color_picker_on");
                 switch (coloreSelezionato) {
                     case "Grigio Siderale":
-                        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color0.classList.add("color_picker_on");
                         color = 0;
                         break;
                     case "Blu":
-                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color1.classList.add("color_picker_on");
                         color = 1;
                         break;
                     case "Rosa":
-                        color2.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color2.classList.add("color_picker_on");
                         color = 2;
                         break;
                     case "Viola":
-                        color3.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color3.classList.add("color_picker_on");
                         color = 3;
                         break;
                     case "Galassia":
-                        color4.style.border = "2px solid rgba(0, 102, 204, 255)";
+                        color4.classList.add("color_picker_on");
                         color = 4;
                         break;
                 }
