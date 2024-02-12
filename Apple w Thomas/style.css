@@ -1108,3 +1108,23 @@ nav.dark img {
         background-color:rgb(15, 15, 15);
     }
 }
+
+/* FOOTER */
+footer{
+    background-color: #F5F5F7;
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer_coloumn{
+    margin: 20px;
+}
+.footer_title{
+    
+}
+.footer_text{
+    
+}
