@@ -63,7 +63,7 @@
                     </div>
                     <ul class="list_product_stats">
                         <li>Chip Apple A15 Bionic</li>
-                        <li id="display">Display 8.3" Liquid Retina<sup>2</sup></li>
+                        <li id="display">Display 8.3" Liquid Retina</li>
                         <li>Ampia gamma cromatica P3 e rivestimento antiriflesso</li>
                         <li>Fotocamera frontale da 12MP con ultra‑grandangolo</li>
                         <li>Grandangolo da 12MP, Video 4K</li>
@@ -221,9 +221,9 @@
                 let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
                 colorText.textContent = "Colore - " + coloreSelezionato;
                 color0.classList.remove("color_picker_on");
-                color1.classList.add("color_picker_on");
-                color2.classList.add("color_picker_on");
-                color3.classList.add("color_picker_on");
+                color1.classList.remove("color_picker_on");
+                color2.classList.remove("color_picker_on");
+                color3.classList.remove("color_picker_on");
                 switch (coloreSelezionato) {
                     case "Grigio Siderale":
                         color0.classList.add("color_picker_on");

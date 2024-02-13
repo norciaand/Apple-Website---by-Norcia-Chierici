@@ -223,14 +223,40 @@ nav {
     margin-bottom: 40px;
 }
 
-.gallery2 {
-    padding-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: auto;
-    white-space: nowrap;
-    width: fit-content;
+.gallery2{
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
 }
+
+.card2{
+    max-width: 200px;
+    border-radius: 20px;
+    justify-content: center;
+    display: block;
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
+    box-shadow: 1px 1px 4px rgb(163, 163, 163,0);
+    /* border: 1px solid black; */
+}
+
+.card2:hover{
+    transform: scale(1.015);
+    box-shadow: 1px 1px 10px rgb(163, 163, 163);
+}
+
+.card2 > img{
+    width: 150px;
+    scale: 0.8;
+}
+
+.card2 > span{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
 
 @media screen and (max-width: 768px) {
     .box_title {
@@ -242,12 +268,24 @@ nav {
         margin-right: auto;
     }
 
+    .gallery2{
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+        padding-bottom: 20px;
+    }
+
+    .card2{
+        display: inline-block;
+    }
+
 }
 
 /*--------------CARD SCHERMATA BENVENUTO-------------------*/
 
 .card {
-    box-shadow: 1px 1px 5px rgb(163, 163, 163);
+    box-shadow: 1px 1px 4px rgb(163, 163, 163);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
@@ -257,12 +295,12 @@ nav {
     background: white;
     border-radius: 40px;
     display: inline-block;
-    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
 }
 
 .card:hover {
-    transform: scale(1.025);
-    border-radius: 20px;
+    transform: scale(1.015);
+    box-shadow: 1px 1px 15px rgb(163, 163, 163);
 }
 
 .card_uptitle {
@@ -352,22 +390,6 @@ nav {
     background-image: url(images/card/ipad.jpeg);
 }
 
-.card2 {
-    box-shadow: 1px 1px 5px rgb(163, 163, 163);
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 400px;
-    height: 200px;
-    background: white;
-    border-radius: 30px;
-    display: inline-block;
-    transition: 200ms transform ease-in-out;
-}
-
-.card2:hover {
-    transform: rotateZ(1deg);
-}
 
 .card3 {
     box-shadow: 1px 1px 5px rgb(163, 163, 163);
@@ -380,37 +402,15 @@ nav {
     background: white;
     border-radius: 40px;
     display: inline-block;
-    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
 }
 
 .card3:hover {
-    transform: scale(1.025);
-    border-radius: 25px;
+    transform: scale(1.015);
+    box-shadow: 1px 1px 15px rgb(163, 163, 163);
 }
 
 @media screen and (max-width: 768px) {
-    .gallery2 {
-        display: block;
-        width: 100%;
-    }
-
-    .card2 {
-        width: 90%;
-        max-width: 350px;
-        margin-left: auto;
-        margin-right: auto;
-        height: 180px;
-        display: block;
-    }
-
-    .card2 .card_text {
-        display: flex;
-        top: 60px;
-        left: 0px;
-        font-size: 15px;
-        position: relative;
-    }
-
     .card3 {
         max-height: 470px;
         max-width: 400px;
@@ -443,13 +443,12 @@ nav {
 
 
 .card4 {
-    box-shadow: 1px 1px 5px rgba(163, 163, 163, 0);
+    box-shadow: 1px 1px 5px rgba(163, 163, 163, 1);
     width: 400px;
-    /*320 x 400*/
     height: 500px;
     background: white;
     display: block;
-    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
     overflow: hidden;
 
     /* border: 1px solid #6E6E73; */
@@ -461,8 +460,8 @@ nav {
 }
 
 .card4:hover {
-    transform: scale(1.04);
-    box-shadow: 0px 0px 10px rgb(163, 163, 163);
+    transform: scale(1.015);
+    box-shadow: 1px 1px 15px rgb(163, 163, 163);
 }
 
 .card4_uptitle {
@@ -1111,7 +1110,8 @@ nav.dark img {
 
 /* FOOTER */
 footer{
-    background-color: #F5F5F7;
+    background-color: white;
+    /* border-top: 1px solid #afadad; */
 }
 .footer_content{
     display: flex;
@@ -1123,8 +1123,40 @@ footer{
     margin: 20px;
 }
 .footer_title{
-    
+    padding-top:10px;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
 }
 .footer_text{
-    
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    width: fit-content;
+}
+
+.footer_uptitle{
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer_text:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer_content{
+        display: block;
+        text-align: center;
+    }
+
+    .footer_text{
+        margin: 0 auto;
+    }
+
 }
