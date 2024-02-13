@@ -563,12 +563,12 @@ nav {
     border-radius: 50px;
     display: flex;
     justify-content: center;
-    transition: 200ms border-radius ease-in-out, 200ms transform ease-in-out;
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
 }
 
 .video_product_box:hover {
-    transform: scale(1.025);
-    border-radius: 0px;
+    transform: scale(1.010);
+    box-shadow: 1px 1px 15px rgb(163, 163, 163);
 }
 
 .video_product {
@@ -610,7 +610,7 @@ nav {
     margin-bottom: 20px;
     margin-left: 15px;
     margin-right: 15px;
-    transition: 200ms transform ease-in-out, 200ms border-radius ease-in-out;
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
 
     background-size: 60%;
     background-position: center;
@@ -620,7 +620,8 @@ nav {
 
 .card_macbook:hover {
     transform: scale(1.025);
-    border-radius: 0px;
+    box-shadow: 1px 1px 7px rgb(163, 163, 163);
+    /* border-radius: 0px; */
 }
 
 .card_macbook_title {
@@ -1110,18 +1111,22 @@ nav.dark img {
 
 /* FOOTER */
 footer{
+    position: relative;
+    z-index: 102;
     background-color: white;
-    /* border-top: 1px solid #afadad; */
 }
+
 .footer_content{
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .footer_coloumn{
     margin: 20px;
 }
+
 .footer_title{
     padding-top:10px;
     display: block;
@@ -1129,6 +1134,7 @@ footer{
     font-weight: 700;
     line-height: 30px;
 }
+
 .footer_text{
     display: block;
     font-size: 14px;
@@ -1158,5 +1164,4 @@ footer{
     .footer_text{
         margin: 0 auto;
     }
-
 }
