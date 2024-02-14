@@ -970,12 +970,12 @@ nav {
 /*PANEL*/
 
 .panel {
-    height: 130vh;
+    height: auto;
     width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color:#F5F5F7;
 }
 
 .panel_content {
@@ -985,7 +985,8 @@ nav {
 
 /*TESTO SUPERIORE*/
 .panel_content p { 
-    font-size: 25px;
+    width: fit-content;
+    font-size: 22px;
     margin: 0;
     padding: 0;
     position: relative;
@@ -994,7 +995,8 @@ nav {
 
 /* TITOLO */
 .panel_content h1 {
-    font-size:65px;
+    width: fit-content;
+    font-size:60px;
     margin: 0;
     padding: 0;
     font-weight: 700;
