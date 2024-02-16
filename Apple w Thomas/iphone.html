@@ -76,9 +76,20 @@
             <p class="obs fade-in">Bello e Colorato</p>
             <h1 class="obs fade-in">iPhone 14<br>e iPhone 14 Plus</h1>
             <img src="images/product_pages/iphone/iphone14.png" alt="" class="panel_img obs fade-img">
-            <a class="obs fade-in"href="iphone15pro.html">VISITA</a>
+            <a class="obs fade-in"href="iphone14.html">VISITA</a>
         </div>
     </div>
+
+    <div class="panel dark">
+        <div class="panel_content">
+            <p class="obs fade-in">Ancora in forma</p>
+            <h1 class="obs fade-in">iPhone 13</h1>
+            <h1 class="obs fade-in">e iPhone 13 mini</h1>
+            <img src="images/product_pages/iphone/iphone13.png" alt="" class="panel_img obs fade-img">
+            <a class="obs fade-in"href="iphone13.html">VISITA</a>
+        </div>
+    </div>
+
 
     <script>
         // elements
@@ -94,7 +105,7 @@
           });
         }
         // observer
-        var observer = new IntersectionObserver(callback, { threshold: 0.6 } );
+        var observer = new IntersectionObserver(callback, { threshold: 0.5 } );
         // apply
         elements_to_watch.forEach((element) => {
           observer.observe(element); 

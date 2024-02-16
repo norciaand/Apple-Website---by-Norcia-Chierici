@@ -1,9 +1,9 @@
 ## COSA MANCA
 
 - catalogo
-    - va riempito
+    - va riempito 
     - ordinato
-    - sistemare il prezzo
+    - sistemare il prezzo D
 - fixare tutte le commercial bar
 - linkare il footer
 - iphone
@@ -14,3 +14,5 @@
     - sistemare la page (foto/video)
 - apple watch fare tutto (page, i 3 apple watch)
 - airpods
+
+- favicon

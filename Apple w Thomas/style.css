@@ -457,11 +457,16 @@ nav {
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 40px;
+
+    /* border: #0066CC00 1px solid; */
+    background-repeat: no-repeat;
+
 }
 
 .card4:hover {
     transform: scale(1.015);
     box-shadow: 1px 1px 15px rgb(163, 163, 163);
+    /* border: #0066CC 1px solid; */
 }
 
 .card4_uptitle {
@@ -483,18 +488,19 @@ nav {
 }
 
 .card4_price {
-    float: right;
+    margin: 0 auto;
     width: fit-content;
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 20px;
     position: relative;
-    top: 460px;
-    left: -40px;
-    transition: 200ms transform ease-in-out;
+    top: 80px;
+    right: 80px;
+    opacity: 0;
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
 }
 
 .card4:hover .card4_price {
-    transform: translateY(-100px);
+    opacity: 1;
+    right: 0px;
 }
 
 
@@ -1010,16 +1016,21 @@ nav {
     display: block;
     text-align: center;
     background-color: #0066CC;
-    color: white;
     width: fit-content;
-    padding: 7px 20px;
+    color: white;
+    padding: 5px 15px;
     border-radius: 20px;
-    transition: 200ms ease-in-out;
+    box-shadow: 1px 1px 4px rgb(163, 163, 163);
+    transition: all 800ms cubic-bezier(.215, .61, .355, 1);
 }
 
-.panel_content a:hover {
-    transform: scale(1.025);
+.panel_content a:hover{
+    box-shadow: 1px 1px 10px rgb(163, 163, 163);
+    transform: scale(1.05);
 }
+
+
+
 
 .fade-in {
     opacity: 0;
