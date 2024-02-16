@@ -1,25 +1,16 @@
-1) index.html -- collegare i link
-2) catalogo.html -- manca da popolare
-3) mac.html FATTO
-4) iphone.html norcia
-5) ipad.html -> thomas
-6) watch.html
-7) airpods.html
+## COSA MANCA
 
-MAC NORCIA; --> colore, ram
-   pro14
-   pro16
-   air15
-
-IPHONE; --> colore , ram, archivizione
-  iphone15pro;
-  iphone15; -> popolazione della pagina, scaricare le foto per i 5 colori
-
-  iphone14 manca tutto
-  iphone13
-
-IPAD;  
-  ipad pro
-  ipad air
-  ipad mini
-
+- catalogo
+    - va riempito
+    - ordinato
+    - sistemare il prezzo
+- fixare tutte le commercial bar
+- linkare il footer
+- iphone
+    - sistemare foto page iphone
+    - aggiungere il 13
+    - 15, 14, 13
+- ipad
+    - sistemare la page (foto/video)
+- apple watch fare tutto (page, i 3 apple watch)
+- airpods
