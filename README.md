@@ -3,7 +3,6 @@
 - catalogo
     - va riempito 
     - ordinato
-    - sistemare il prezzo D
 - fixare tutte le commercial bar
 - linkare il footer
 - iphone

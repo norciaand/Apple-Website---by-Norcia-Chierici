@@ -96,27 +96,27 @@
                         <input class="option_product" type="radio" name="option_color" value="Titanio Naturale"
                             id="option_color_NATURAL" required>
                         <label for="option_color_NATURAL">
-                            <img id="color0" src="images/product_pages/iphone15pro/color_natural.png">
+                            <img class="color_picker_off" id="color0" src="images/product_pages/iphone15pro/color_natural.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Titanio Blu"
                             id="option_color_BLUE" required>
                         <label for="option_color_BLUE">
-                            <img id="color1" src="images/product_pages/iphone15pro/color_blue.png">
+                            <img class="color_picker_off" id="color1" src="images/product_pages/iphone15pro/color_blue.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Titanio Bianco"
                             id="option_color_WHITE" required>
                         <label for="option_color_WHITE">
-                            <img id="color2" src="images/product_pages/iphone15pro/color_white.png">
+                            <img class="color_picker_off" id="color2" src="images/product_pages/iphone15pro/color_white.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Titanio Nero"
                             id="option_color_BLACK" required>
                         <label for="option_color_BLACK">
-                            <img id="color3" src="images/product_pages/iphone15pro/color_black.png">
+                            <img class="color_picker_off" id="color3" src="images/product_pages/iphone15pro/color_black.png">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Titanio Nero"
                             id="option_color_BLACK" required>
                         <label for="option_color_BLACK">
-                            <img id="color3" src="images/product_pages/iphone15pro/color_black.png">
+                            <img class="color_picker_off" id="color4" src="images/product_pages/iphone15pro/color_black.png">
                         </label>
                     </div>
 
@@ -165,6 +165,7 @@
         const color1 = document.getElementById("color1");
         const color2 = document.getElementById("color2");
         const color3 = document.getElementById("color3");
+        const color3 = document.getElementById("color4");
 
         const colorText = document.getElementById("colorTexted");           /*stringa che scrive il colore*/
         const modelText = document.getElementById("model");                 /*stringa nel titolo che scrive il modello*/
@@ -349,10 +350,12 @@
             btnColor.addEventListener('click', () => {
                 let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
                 colorText.textContent = "Colore - " + coloreSelezionato;
-                color0.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color1.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color2.style.border = "2px solid rgba(0, 102, 204, 0)";
-                color3.style.border = "2px solid rgba(0, 102, 204, 0)";
+                color0.classList.remove("color_picker_on");
+                color1.classList.remove("color_picker_on");
+                color2.classList.remove("color_picker_on");
+                color3.classList.remove("color_picker_on");
+                color4.classList.remove("color_picker_on");
+
                 switch (coloreSelezionato) {
                     case "Titanio Naturale":
                         color0.style.border = "2px solid rgba(0, 102, 204, 255)";
