@@ -640,8 +640,22 @@ nav {
     transition: 500ms background-color ease-in-out;
 }
 
-.card_macbook:hover .card_macbook_title {
-    background-color: rgb(224, 224, 224);
+.card_macbook_title::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 90%; right: 0; bottom: 0; left: 0;
+    background-color: rgb(179, 179, 179);
+    transition: transform 800ms ease;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    z-index: -1;
+    height: 3px;
+}
+
+.card_macbook:hover .card_macbook_title::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 #macbookpro14 {
