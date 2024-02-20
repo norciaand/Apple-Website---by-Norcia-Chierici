@@ -51,9 +51,10 @@
         <div class="box_table">
             <div id="first_product">
                 <div class="image_product" id="image_product_macbookpro14">
-                    <img id="img" src="images/product_pages/iphone15pro/natural0.png">
+                    <img id="img" src="images/product_pages/iphone15/blue0.jpeg">
                 </div>
-                <span id="prezzo">€ 1.269,00</span>
+                <span id="prezzo">€ 979,00</span>
+                <button class="button">ACQUISTA</button>
             </div>
             <div>
                 <form class="form_product">
@@ -73,50 +74,49 @@
                         <span class="sottotitolo">Scegli il Modello</span>
                     </div>
                     <div class="option_container">
-                        <input class="option_product" type="radio" name="option_model" value="pro"
-                            id="option_model_PRO" required>
-                        <label class="option_product_label opl2l" for="option_model_PRO"
-                            id="option_model_label_PRO">
+                        <input class="option_product" type="radio" name="option_model" value="base"
+                            id="option_model_BASE" required>
+                        <label class="option_product_label opl2l" for="option_model_BASE"
+                            id="option_model_label_BASE">
                             <p>iPhone 15</p>
                         </label>
 
-                        <input class="option_product" type="radio" name="option_model" value="max"
-                            id="option_model_MAX" required>
-                        <label class="option_product_label opl2r" for="option_model_MAX"
-                            id="option_model_label_MAX">
+                        <input class="option_product" type="radio" name="option_model" value="plus"
+                            id="option_model_PLUS" required>
+                        <label class="option_product_label opl2r" for="option_model_PLUS"
+                            id="option_model_label_PLUS">
                             <p>iPhone 15 Plus</p>
                         </label>
                     </div>
                     <div class="box_title">
                         <span class="sottotitolo">Scegli il Colore</span>
                     </div>
-                    <div class="list_product_stats" id="colorTexted" style="margin-top: 5px;">Colore - Titanio
-                        Naturale</div>
+                    <div class="list_product_stats" id="colorTexted" style="margin-top: 5px;">Colore - Blu</div>
                     <div class="option_container iphone_color_picker">
-                        <input class="option_product" type="radio" name="option_color" value="Titanio Naturale"
-                            id="option_color_NATURAL" required>
-                        <label for="option_color_NATURAL">
-                            <img class="color_picker_off" id="color0" src="images/product_pages/iphone15pro/color_natural.png">
-                        </label>
-                        <input class="option_product" type="radio" name="option_color" value="Titanio Blu"
+                        <input class="option_product" type="radio" name="option_color" value="Blu"
                             id="option_color_BLUE" required>
                         <label for="option_color_BLUE">
-                            <img class="color_picker_off" id="color1" src="images/product_pages/iphone15pro/color_blue.png">
+                            <img class="color_picker_off" id="color0" src="images/product_pages/iphone15/color_blue.png">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value="Titanio Bianco"
-                            id="option_color_WHITE" required>
-                        <label for="option_color_WHITE">
-                            <img class="color_picker_off" id="color2" src="images/product_pages/iphone15pro/color_white.png">
+                        <input class="option_product" type="radio" name="option_color" value="Rosa"
+                            id="option_color_ROSE" required>
+                        <label for="option_color_ROSE">
+                            <img class="color_picker_off" id="color1" src="images/product_pages/iphone15/color_rose.png">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value="Titanio Nero"
+                        <input class="option_product" type="radio" name="option_color" value="Giallo"
+                            id="option_color_YELLOW" required>
+                        <label for="option_color_YELLOW">
+                            <img class="color_picker_off" id="color2" src="images/product_pages/iphone15/color_yellow.png">
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Verde"
+                            id="option_color_GREEN" required>
+                        <label for="option_color_GREEN">
+                            <img class="color_picker_off" id="color3" src="images/product_pages/iphone15/color_green.png">
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Nero"
                             id="option_color_BLACK" required>
                         <label for="option_color_BLACK">
-                            <img class="color_picker_off" id="color3" src="images/product_pages/iphone15pro/color_black.png">
-                        </label>
-                        <input class="option_product" type="radio" name="option_color" value="Titanio Nero"
-                            id="option_color_BLACK" required>
-                        <label for="option_color_BLACK">
-                            <img class="color_picker_off" id="color4" src="images/product_pages/iphone15pro/color_black.png">
+                            <img class="color_picker_off" id="color4" src="images/product_pages/iphone15/color_black.png">
                         </label>
                     </div>
 
@@ -147,8 +147,6 @@
                     <label class="option_product_label" for="option_rom1T" id="option_rom1T_label">
                         <p>1TB di archiviazione</p>
                     </label>
-
-                    <button class="buy">ACQUISTA</button>
                 </form>
             </div>
         </div>  
@@ -165,12 +163,12 @@
         const color1 = document.getElementById("color1");
         const color2 = document.getElementById("color2");
         const color3 = document.getElementById("color3");
-        const color3 = document.getElementById("color4");
+        const color4 = document.getElementById("color4");
 
         const colorText = document.getElementById("colorTexted");           /*stringa che scrive il colore*/
         const modelText = document.getElementById("model");                 /*stringa nel titolo che scrive il modello*/
-        const model0 = document.getElementById("option_model_label_PRO");   /*pulsante pro*/
-        const model1 = document.getElementById("option_model_label_MAX");   /*pulsante pro max*/
+        const model0 = document.getElementById("option_model_label_BASE");   /*pulsante pro*/
+        const model1 = document.getElementById("option_model_label_PLUS");   /*pulsante pro max*/
         const picture = document.getElementById("img")                      /*immagine*/
         const priceText = document.getElementById("prezzo");                /*stringa prezzo*/
         const display = document.getElementById("display");                 /*stringa dimensione display*/
@@ -180,12 +178,11 @@
         const r128 = document.getElementById("option_rom128_label");
         const r256 = document.getElementById("option_rom256_label");
         const r512 = document.getElementById("option_rom512_label");
-        const r1T = document.getElementById("option_rom1T_label");
 
         /*SETUP INIZIALI DI STILE*/
         model0.style.border = "#0066cc 1px solid";
         model1.style.border = "#0066cc00 1px solid";
-        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+        color0.classList.add("color_picker_on");
         r128.style.border = "#0066CC 1px solid";
 
         /*VARIABILI*/
@@ -202,64 +199,65 @@
                     if (color == 0) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/natural0.png";
+                                picture.src = "images/product_pages/iphone15/blue0.jpeg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/natural1.png";
+                                picture.src = "images/product_pages/iphone15/blue1.jpeg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/natural2.png";
-                                break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/natural3.png";
+                                picture.src = "images/product_pages/iphone15/blue2.jpeg";
                                 break;
                         }
                     }
                     else if (color == 1) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/blue0.png";
+                                picture.src = "images/product_pages/iphone15/rose0.jpeg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/blue1.png";
+                                picture.src = "images/product_pages/iphone15/rose1.jpeg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/blue2.png";
-                                break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/blue3.png";
+                                picture.src = "images/product_pages/iphone15/rose2.jpeg";
                                 break;
                         }
                     }
                     else if (color == 2) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/white0.png";
+                                picture.src = "images/product_pages/iphone15/yellow0.jpeg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/white1.png";
+                                picture.src = "images/product_pages/iphone15/yellow1.jpeg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/white2.png";
-                                break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/white3.png";
+                                picture.src = "images/product_pages/iphone15/yellow2.jpeg";
                                 break;
                         }
                     }
                     else if (color == 3) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/black0.png";
+                                picture.src = "images/product_pages/iphone15/green0.jpeg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/black1.png";
+                                picture.src = "images/product_pages/iphone15/green1.jpeg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/black2.png";
+                                picture.src = "images/product_pages/iphone15/green2.jpeg";
                                 break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/black3.png";
+                        }
+                    }
+                    else if (color == 4) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15/black0.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15/black1.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15/black2.png";
                                 break;
                         }
                     }
@@ -336,7 +334,7 @@
 
         /*LISTENER CLICK SULL'IMMAGINE*/
         picture.addEventListener("click", () => {
-            if (photo == 3) {
+            if (photo == 2) {
                 photo = 0;
             }
             else {
@@ -357,21 +355,25 @@
                 color4.classList.remove("color_picker_on");
 
                 switch (coloreSelezionato) {
-                    case "Titanio Naturale":
-                        color0.style.border = "2px solid rgba(0, 102, 204, 255)";
+                    case "Blu":
+                        color0.classList.add("color_picker_on");
                         color = 0;
                         break;
-                    case "Titanio Blu":
-                        color1.style.border = "2px solid rgba(0, 102, 204, 255)";
+                    case "Rosa":
+                        color1.classList.add("color_picker_on");
                         color = 1;
                         break;
-                    case "Titanio Bianco":
-                        color2.style.border = "2px solid rgba(0, 102, 204, 255)";
+                    case "Giallo":
+                        color2.classList.add("color_picker_on");
                         color = 2;
                         break;
-                    case "Titanio Nero":
-                        color3.style.border = "2px solid rgba(0, 102, 204, 255)";
+                    case "Verde":
+                        color3.classList.add("color_picker_on");
                         color = 3;
+                        break;
+                    case "Nero":
+                        color4.classList.add("color_picker_on");
+                        color = 4;
                         break;
                 }
                 loadPicture();
@@ -382,19 +384,19 @@
         btnsModel.forEach(btnModel => {
             btnModel.addEventListener('change', () => {
                 let modelloSelezionato = document.querySelector(".option_product[name='option_model']:checked").value;
-                if (modelloSelezionato == "pro") {
+                if (modelloSelezionato == "base") {
                     model = 0;
                     model0.style.border = "#0066cc 1px solid";
                     model1.style.border = "#82828300 1px solid";
-                    modelText.textContent = "iPhone 15 Pro";
-                    display.textContent = "Display 6.1\" Super Retina XDR con ProMotion e Always-on";
+                    modelText.textContent = "iPhone 15";
+                    display.textContent = "Display 6.1\" Super Retina XDR";
                 }
-                else if (modelloSelezionato == "max") {
+                else if (modelloSelezionato == "plus") {
                     model = 1;
                     model1.style.border = "#0066cc 1px solid";
                     model0.style.border = "#82828300 1px solid";
-                    modelText.textContent = "iPhone 15 Pro Max";
-                    display.textContent = "Display 6.7\" Super Retina XDR con ProMotion e Always-on";
+                    modelText.textContent = "iPhone 15 Plus";
+                    display.textContent = "Display 6.7\" Super Retina XDR";
                 }
                 loadPicture();
             });
