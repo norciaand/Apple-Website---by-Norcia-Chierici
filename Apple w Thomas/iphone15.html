@@ -142,12 +142,6 @@
                     <label class="option_product_label" for="option_rom512" id="option_rom512_label">
                         <p>512GB di archiviazione</p>
                     </label>
-
-                    <input class="option_product" type="radio" name="option_rom" value="1T" id="option_rom1T"
-                        required>
-                    <label class="option_product_label" for="option_rom1T" id="option_rom1T_label">
-                        <p>1TB di archiviazione</p>
-                    </label>
                 </form>
             </div>
         </div>  
@@ -252,84 +246,86 @@
                     else if (color == 4) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15/black0.png";
+                                picture.src = "images/product_pages/iphone15/black0.jpeg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15/black1.png";
+                                picture.src = "images/product_pages/iphone15/black1.jpeg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15/black2.png";
+                                picture.src = "images/product_pages/iphone15/black2.jpeg";
                                 break;
                         }
                     }
                     break;
 
-                case 1:
+                    case 1:
                     if (color == 0) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/natural0m.png";
+                                picture.src = "images/product_pages/iphone15/blue0p.jpg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/natural1m.png";
+                                picture.src = "images/product_pages/iphone15/blue1p.jpg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/natural2m.png";
-                                break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/natural3m.png";
+                                picture.src = "images/product_pages/iphone15/blue2p.jpg";
                                 break;
                         }
                     }
                     else if (color == 1) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/blue0m.png";
+                                picture.src = "images/product_pages/iphone15/rose0p.jpg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/blue1m.png";
+                                picture.src = "images/product_pages/iphone15/rose1p.jpg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/blue2m.png";
-                                break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/blue3m.png";
+                                picture.src = "images/product_pages/iphone15/rose2p.jpg";
                                 break;
                         }
                     }
                     else if (color == 2) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/white0m.png";
+                                picture.src = "images/product_pages/iphone15/yellow0p.jpg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/white1m.png";
+                                picture.src = "images/product_pages/iphone15/yellow1p.jpg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/white2m.png";
-                                break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/white3m.png";
+                                picture.src = "images/product_pages/iphone15/yellow2p.jpg";
                                 break;
                         }
                     }
                     else if (color == 3) {
                         switch (photo) {
                             case 0:
-                                picture.src = "images/product_pages/iphone15pro/black0m.png";
+                                picture.src = "images/product_pages/iphone15/green0p.jpg";
                                 break;
                             case 1:
-                                picture.src = "images/product_pages/iphone15pro/black1m.png";
+                                picture.src = "images/product_pages/iphone15/green1p.jpg";
                                 break;
                             case 2:
-                                picture.src = "images/product_pages/iphone15pro/black2m.png";
+                                picture.src = "images/product_pages/iphone15/green2p.jpg";
                                 break;
-                            case 3:
-                                picture.src = "images/product_pages/iphone15pro/black3m.png";
+                        }
+                    }
+                    else if (color == 4) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15/black0p.jpg";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15/black1p.jpg";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15/black2p.jpg";
                                 break;
                         }
                     }
                     break;
+                
             }
         }
 
@@ -410,7 +406,6 @@
                 r128.style.border = "#828283 1px solid";
                 r256.style.border = "#828283 1px solid";
                 r512.style.border = "#828283 1px solid";
-                r1T.style.border = "#828283 1px solid";
 
                 if (selectedRom == "128") {
                     r128.style.border = "#0066CC 1px solid";
@@ -426,11 +421,6 @@
                     r512.style.border = "#0066CC 1px solid";
                     romText.textContent = "512GB di archiviazione";
                     rom = 512;
-                }
-                else {
-                    r1T.style.border = "#0066CC 1px solid";
-                    romText.textContent = "1TB di archiviazione";
-                    rom = 1000;
                 }
             });
         });
