@@ -7,7 +7,7 @@
     <meta name="author" value="Andrea Norcia">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="favicon/svg" />
-    <title>iPhone 15</title>
+    <title>iPhone 13</title>
 </head>
 
 <nav>
@@ -35,24 +35,24 @@
         <div>
             <span style="color:#0066CC"> < </span>
             <span><a class="blue_link" href="iphone.html">iPhone</a></span>
-            <span> | Ecco la pagina di acquisto del nuovo iPhone 15. Se stai cercando la home page, torna
-                ad</span>
-            <span><a class="blue_link" href="index.html">Apple Store</a></span>
-            <span style="color:#0066CC; "> > </span>
+            <span> | Puoi avere da € 170 a € 770 di credito per un iPhone 15 o iPhone 15 Pro se dai in permuta un iPhone 11 o più recente. </span>
+            <span><a class="blue_link" href="iphone.html">Acquista iPhone</a></span> 
+            <span style="color:#0066CC; "> > </span>   
         </div>
     </div>
+
 
     <div class="box_product">
 
         <div class="box_title">
-            <span class="sottotitolo" style="color: black;" id="model">iPhone 15</span>
-            <span class="sottotitolo">,&nbspfreschissimo e velocissimo</span>
+            <span class="sottotitolo" style="color: black;" id="model">iPhone 13</span>
+            <span class="sottotitolo">,&nbspil tuo nuovo superpotere!</span>
         </div>
 
         <div class="box_table">
             <div id="first_product">
-                <div class="image_product" >
-                    <img id="img" src="images/product_pages/iphone15/blue0.jpeg">
+                <div class="image_product">
+                    <img id="img" src="images/product_pages/iphone13/blue0.jpg">
                 </div>
                 <span id="prezzo">€ 979,00</span>
                 <button class="button">ACQUISTA</button>
@@ -77,16 +77,9 @@
                     <div class="option_container">
                         <input class="option_product" type="radio" name="option_model" value="base"
                             id="option_model_BASE" required>
-                        <label class="option_product_label opl2l" for="option_model_BASE"
+                        <label class="option_product_label" for="option_model_BASE"
                             id="option_model_label_BASE">
-                            <p>iPhone 15</p>
-                        </label>
-
-                        <input class="option_product" type="radio" name="option_model" value="plus"
-                            id="option_model_PLUS" required>
-                        <label class="option_product_label opl2r" for="option_model_PLUS"
-                            id="option_model_label_PLUS">
-                            <p>iPhone 15 Plus</p>
+                            <p>iPhone 13</p>
                         </label>
                     </div>
                     <div class="box_title">
@@ -97,28 +90,39 @@
                         <input class="option_product" type="radio" name="option_color" value="Blu"
                             id="option_color_BLUE" required>
                         <label for="option_color_BLUE">
-                            <img class="color_picker_off" id="color0" src="images/product_pages/iphone15/color_blue.png">
+                            <img class="color_picker_off" id="color0" src="images/product_pages/iphone13/color_blue.jpg">
                         </label>
                         <input class="option_product" type="radio" name="option_color" value="Rosa"
                             id="option_color_ROSE" required>
                         <label for="option_color_ROSE">
-                            <img class="color_picker_off" id="color1" src="images/product_pages/iphone15/color_rose.png">
+                            <img class="color_picker_off" id="color1" src="images/product_pages/iphone13/color_rose.jpg">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value="Giallo"
-                            id="option_color_YELLOW" required>
-                        <label for="option_color_YELLOW">
-                            <img class="color_picker_off" id="color2" src="images/product_pages/iphone15/color_yellow.png">
+                        <input class="option_product" type="radio" name="option_color" value="Mezzanotte"
+                            id="option_color_MID" required>
+                        <label for="option_color_MID">
+                            <img class="color_picker_off" id="color2" src="images/product_pages/iphone13/color_midnight.jpg">
                         </label>
+                        <input class="option_product" type="radio" name="option_color" value="Galassia"
+                            id="option_color_GAL" required>
+                        <label for="option_color_GAL">
+                            <img class="color_picker_off" id="color3" src="images/product_pages/iphone13/color_galaxy.jpg">
+                        </label>
+
                         <input class="option_product" type="radio" name="option_color" value="Verde"
                             id="option_color_GREEN" required>
                         <label for="option_color_GREEN">
-                            <img class="color_picker_off" id="color3" src="images/product_pages/iphone15/color_green.png">
+                            <img class="color_picker_off" id="color4" src="images/product_pages/iphone13/color_green.jpg">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value="Nero"
-                            id="option_color_BLACK" required>
-                        <label for="option_color_BLACK">
-                            <img class="color_picker_off" id="color4" src="images/product_pages/iphone15/color_black.png">
+
+                        <input class="option_product" type="radio" name="option_color" value="Rosso (Product)"
+                            id="option_color_RED" required>
+                        <label for="option_color_RED">
+                            <img class="color_picker_off" id="color5" src="images/product_pages/iphone13/color_red.jpg">
                         </label>
+                    </div>
+
+                    <div class="box_title">
+                        <span class="sottotitolo">Quanto spazio ti serve?</span>
                     </div>
 
                     <input class="option_product" type="radio" name="option_rom" value="128" id="option_rom128"
@@ -155,11 +159,11 @@
         const color2 = document.getElementById("color2");
         const color3 = document.getElementById("color3");
         const color4 = document.getElementById("color4");
+        const color5 = document.getElementById("color5");
 
         const colorText = document.getElementById("colorTexted");           /*stringa che scrive il colore*/
         const modelText = document.getElementById("model");                 /*stringa nel titolo che scrive il modello*/
-        const model0 = document.getElementById("option_model_label_BASE");   /*pulsante pro*/
-        const model1 = document.getElementById("option_model_label_PLUS");   /*pulsante pro max*/
+        const model0 = document.getElementById("option_model_label_BASE");   /*pulsante base*/ 
         const picture = document.getElementById("img")                      /*immagine*/
         const priceText = document.getElementById("prezzo");                /*stringa prezzo*/
         const display = document.getElementById("display");                 /*stringa dimensione display*/
@@ -172,12 +176,10 @@
 
         /*SETUP INIZIALI DI STILE*/
         model0.style.border = "#0066cc 1px solid";
-        model1.style.border = "#0066cc00 1px solid";
         color0.classList.add("color_picker_on");
         r128.style.border = "#0066CC 1px solid";
 
         /*VARIABILI*/
-        let model = 0;
         let color = 0;
         let photo = 0;
         let rom = 128;
@@ -185,143 +187,83 @@
 
         /*FUNZIONE CARICATRICE DELLE IMMAGINI*/
         function loadPicture() {
-            switch (model) {
-                case 0:
-                    if (color == 0) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/blue0.jpeg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/blue1.jpeg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/blue2.jpeg";
-                                break;
-                        }
-                    }
-                    else if (color == 1) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/rose0.jpeg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/rose1.jpeg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/rose2.jpeg";
-                                break;
-                        }
-                    }
-                    else if (color == 2) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/yellow0.jpeg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/yellow1.jpeg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/yellow2.jpeg";
-                                break;
-                        }
-                    }
-                    else if (color == 3) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/green0.jpeg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/green1.jpeg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/green2.jpeg";
-                                break;
-                        }
-                    }
-                    else if (color == 4) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/black0.jpeg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/black1.jpeg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/black2.jpeg";
-                                break;
-                        }
-                    }
-                    break;
-
+            if (color == 0) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone13/blue0.jpg";
+                        break;
                     case 1:
-                    if (color == 0) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/blue0p.jpg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/blue1p.jpg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/blue2p.jpg";
-                                break;
-                        }
-                    }
-                    else if (color == 1) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/rose0p.jpg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/rose1p.jpg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/rose2p.jpg";
-                                break;
-                        }
-                    }
-                    else if (color == 2) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/yellow0p.jpg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/yellow1p.jpg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/yellow2p.jpg";
-                                break;
-                        }
-                    }
-                    else if (color == 3) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/green0p.jpg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/green1p.jpg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/green2p.jpg";
-                                break;
-                        }
-                    }
-                    else if (color == 4) {
-                        switch (photo) {
-                            case 0:
-                                picture.src = "images/product_pages/iphone15/black0p.jpg";
-                                break;
-                            case 1:
-                                picture.src = "images/product_pages/iphone15/black1p.jpg";
-                                break;
-                            case 2:
-                                picture.src = "images/product_pages/iphone15/black2p.jpg";
-                                break;
-                        }
-                    }
-                    break;
-                
+                        picture.src = "images/product_pages/iphone13/blue1.jpg";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone13/blue2.jpg";
+                        break;
+                }
+            }
+            else if (color == 1) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone13/rose0.jpg";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone13/rose1.jpg";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone13/rose2.jpg";
+                        break;
+                }
+            }
+            else if (color == 2) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone13/midnight0.jpg";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone13/midnight1.jpg";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone13/midnight2.jpg";
+                        break;
+                }
+            }
+            else if (color == 3) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone13/galaxy0.jpg";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone13/galaxy1.jpg";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone13/galaxy2.jpg";
+                        break;
+                }
+            }
+            else if (color == 4) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone13/green0.jpg";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone13/green1.jpg";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone13/green2.jpg";
+                        break;
+                }
+            }
+            else if (color == 5) {
+                switch (photo) {
+                    case 0:
+                        picture.src = "images/product_pages/iphone13/red0.jpg";
+                        break;
+                    case 1:
+                        picture.src = "images/product_pages/iphone13/red1.jpg";
+                        break;
+                    case 2:
+                        picture.src = "images/product_pages/iphone13/red2.jpg";
+                        break;
+                }
             }
         }
 
@@ -346,6 +288,7 @@
                 color2.classList.remove("color_picker_on");
                 color3.classList.remove("color_picker_on");
                 color4.classList.remove("color_picker_on");
+                color5.classList.remove("color_picker_on");
 
                 switch (coloreSelezionato) {
                     case "Blu":
@@ -356,40 +299,22 @@
                         color1.classList.add("color_picker_on");
                         color = 1;
                         break;
-                    case "Giallo":
+                    case "Mezzanotte":
                         color2.classList.add("color_picker_on");
                         color = 2;
                         break;
-                    case "Verde":
+                    case "Galassia":
                         color3.classList.add("color_picker_on");
                         color = 3;
                         break;
-                    case "Nero":
+                    case "Verde":
                         color4.classList.add("color_picker_on");
                         color = 4;
                         break;
-                }
-                loadPicture();
-            });
-        });
-
-        /*LISTENER CAMBIO MODELLO*/
-        btnsModel.forEach(btnModel => {
-            btnModel.addEventListener('change', () => {
-                let modelloSelezionato = document.querySelector(".option_product[name='option_model']:checked").value;
-                if (modelloSelezionato == "base") {
-                    model = 0;
-                    model0.style.border = "#0066cc 1px solid";
-                    model1.style.border = "#82828300 1px solid";
-                    modelText.textContent = "iPhone 15";
-                    display.textContent = "Display 6.1\" Super Retina XDR";
-                }
-                else if (modelloSelezionato == "plus") {
-                    model = 1;
-                    model1.style.border = "#0066cc 1px solid";
-                    model0.style.border = "#82828300 1px solid";
-                    modelText.textContent = "iPhone 15 Plus";
-                    display.textContent = "Display 6.7\" Super Retina XDR";
+                    case "Rosso (Product)":
+                        color5.classList.add("color_picker_on");
+                        color = 5;
+                        break;
                 }
                 loadPicture();
             });

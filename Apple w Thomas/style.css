@@ -930,14 +930,6 @@ nav {
         margin-right: auto;
         width: 90%;
     }
-
-    .buy {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        margin: 30px auto 30px auto;
-    }
 }
 
 /*-------------IPHONE 15 PRO--------------------*/
@@ -949,13 +941,11 @@ nav {
     margin-right: 20px;
     padding: 20px;
     border-radius: 30px;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
 .color_picker_off{
     width: 40px;
-    margin-left: 13px;
-    margin-right: 13px;
     transition: all 200ms ease-in-out;
 
     background-repeat: no-repeat;
