@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="Andrea Norcia">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="favicon/svg" />
+    <title>Apple Watch 9</title>
+</head>
+
+<nav>
+    <div class="headbar">
+        <div class="headbar_logo">
+            <span class="headbar_element" id="icon_hamburgher"><a><img class="headbar_img" src="images/apple-logo.svg" height="15px"></a></span>
+        </div>
+        <div class="headbar_content">
+            <span class="headbar_element"><a href="index.html">Apple</a></span>
+            <span class="headbar_element"><a href="mac.html">Mac</a></span>
+            <span class="headbar_element"><a href="iphone.html">iPhone</a></span>
+            <span class="headbar_element"><a href="ipad.html">iPad</a></span>
+            <span class="headbar_element"><a href="watch.html">Watch</a></span>
+            <span class="headbar_element"><a href="airpods.html">AirPods</a></span>
+        </div>
+        <div class="headbar_logo">
+            <span class="headbar_element"><a href="catalogo.html"><img class="headbar_img" src="images/search-icon.webp" height="15px"></a></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</nav>
+
+<body>
+    <div class="bar1">
+        <div>
+            <span style="color:#0066CC"> < </span>
+            <span><a class="blue_link" href="watch.html">Watch</a></span>
+            <span> | Ecco la pagina di acquisto del nuovo Apple Watch Series 9. Se stai cercando la home page, torna
+                ad</span>
+            <span><a class="blue_link" href="index.html">Apple Store</a></span>
+            <span style="color:#0066CC; "> > </span>
+        </div>
+    </div>
+
+    <div class="box_product">
+        <div class="box_title">
+            <span class="sottotitolo" style="color: black;" id="model">Apple Watch Series 9</span>
+            <span class="sottotitolo">,&nbsppiù smart e più potente</span>
+        </div>
+        <div class="box_table">
+            <div id="first_product">
+                <div class="image_product" id="image_product_macbookpro14">
+                    <img id="img" src="images/product_pages/iphone15pro/natural0.png">
+                </div>
+                <span id="prezzo">€ 1.239,00</span>
+                <button class="button">ACQUISTA</button>
+            </div>
+            <div>
+                <form class="form_product">
+                    <div class="box_title">
+                        <span class="sottotitolo">Specifiche</span>
+                    </div>
+                    <ul class="list_product_stats">
+                        <li>Chip S9 SiP + Gesto doppio tap + Posizione Precisa</li>
+                        <li>Display Retina always-on</li>
+                        <li></li>
+                        <li>USB‑C Compatibile con USB 3</li>
+                        <li id="rom">Notifiche frequenza troppo alta o troppo bassa</li>
+                        <li>Sensore di Temperatura</li>
+                        <li>Connettività cellulare e GPS</li>
+                    </ul>
+                    <div class="box_title">
+                        <span class="sottotitolo">Scegli il Modello</span>
+                    </div>
+                    <div class="option_container">
+                        <input class="option_product" type="radio" name="option_model" value="pro"
+                            id="option_model_PRO" required>
+                        <label class="option_product_label opl2l" for="option_model_PRO"
+                            id="option_model_label_PRO">
+                            <p>iPhone 15 Pro</p>
+                        </label>
+
+                        <input class="option_product" type="radio" name="option_model" value="max"
+                            id="option_model_MAX" required>
+                        <label class="option_product_label opl2r" for="option_model_MAX"
+                            id="option_model_label_MAX">
+                            <p>iPhone 15 Pro Max</p>
+                        </label>
+                    </div>
+                    <div class="box_title">
+                        <span class="sottotitolo">Scegli il Colore</span>
+                    </div>
+                    <div class="list_product_stats" id="colorTexted" style="margin-top: 5px;">Colore - Titanio
+                        Naturale</div>
+                    <div class="option_container iphone_color_picker">
+                        <input class="option_product" type="radio" name="option_color" value="Titanio Naturale"
+                            id="option_color_NATURAL" required>
+                        <label for="option_color_NATURAL">
+                            <img class="color_picker_off" id="color0" src="images/product_pages/iphone15pro/color_natural.png">
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Titanio Blu"
+                            id="option_color_BLUE" required>
+                        <label for="option_color_BLUE">
+                            <img class="color_picker_off" id="color1" src="images/product_pages/iphone15pro/color_blue.png">
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Titanio Bianco"
+                            id="option_color_WHITE" required>
+                        <label for="option_color_WHITE">
+                            <img class="color_picker_off" id="color2" src="images/product_pages/iphone15pro/color_white.png">
+                        </label>
+                        <input class="option_product" type="radio" name="option_color" value="Titanio Nero"
+                            id="option_color_BLACK" required>
+                        <label for="option_color_BLACK">
+                            <img class="color_picker_off" id="color3" src="images/product_pages/iphone15pro/color_black.png">
+                        </label>
+                    </div>
+
+                    <div class="box_title">
+                        <span class="sottotitolo">Quanto spazio ti serve?</span>
+                    </div>
+
+                    <input class="option_product" type="radio" name="option_rom" value="128" id="option_rom128"
+                        required>
+                    <label class="option_product_label" for="option_rom128" id="option_rom128_label">
+                        <p>128GB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="256" id="option_rom256"
+                        required>
+                    <label class="option_product_label" for="option_rom256" id="option_rom256_label">
+                        <p>256GB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="512" id="option_rom512"
+                        required>
+                    <label class="option_product_label" for="option_rom512" id="option_rom512_label">
+                        <p>512GB di archiviazione</p>
+                    </label>
+
+                    <input class="option_product" type="radio" name="option_rom" value="1T" id="option_rom1T"
+                        required>
+                    <label class="option_product_label" for="option_rom1T" id="option_rom1T_label">
+                        <p>1TB di archiviazione</p>
+                    </label>
+
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        /*RADIO BUTTON*/
+        let btnsColor = document.querySelectorAll(".option_product[name='option_color']");
+        let btnsModel = document.querySelectorAll(".option_product[name='option_model']");
+        let btnsRom = document.querySelectorAll(".option_product[name='option_rom']");
+
+        /*IMMAGINI CIRCOLARI COLORE*/
+        const color0 = document.getElementById("color0");
+        const color1 = document.getElementById("color1");
+        const color2 = document.getElementById("color2");
+        const color3 = document.getElementById("color3");
+
+        const colorText = document.getElementById("colorTexted");           /*stringa che scrive il colore*/
+        const modelText = document.getElementById("model");                 /*stringa nel titolo che scrive il modello*/
+        const model0 = document.getElementById("option_model_label_PRO");   /*pulsante pro*/
+        const model1 = document.getElementById("option_model_label_MAX");   /*pulsante pro max*/
+        const picture = document.getElementById("img")                      /*immagine*/
+        const priceText = document.getElementById("prezzo");                /*stringa prezzo*/
+        const display = document.getElementById("display");                 /*stringa dimensione display*/
+        const romText = document.getElementById("rom");                     /*stringa memoria di archiviazione*/
+
+        /*LABEL-PULSTANTI per ogni MEMORIA*/
+        const r128 = document.getElementById("option_rom128_label");
+        const r256 = document.getElementById("option_rom256_label");
+        const r512 = document.getElementById("option_rom512_label");
+        const r1T = document.getElementById("option_rom1T_label");
+
+        /*SETUP INIZIALI DI STILE*/
+        model0.style.border = "#0066cc 1px solid";
+        model1.style.border = "#0066cc00 1px solid";
+        color0.classList.add("color_picker_on");
+        r128.style.border = "#0066CC 1px solid";
+
+        /*VARIABILI*/
+        let model = 0;
+        let color = 0;
+        let photo = 0;
+        let rom = 128;
+        const priceDef = 1239;
+
+        function calcolaPrezzo(){
+            let price = priceDef;
+
+            if (model == 1)
+            {
+                price += 120;
+            }
+
+            switch (rom)
+            {
+                case 256:
+                    price+=130;
+                    break;
+                case 512:
+                    price+=380;
+                    break;
+                case 1000:
+                    price+=630;
+                    break;
+                default:
+                    break;
+            }
+            
+            if (price>1000)
+            {
+                price = "1." + price%1000;
+            }
+            priceText.textContent = "€ " + price + ",00";
+        }
+
+        /*FUNZIONE CARICATRICE DELLE IMMAGINI*/
+        function loadPicture() {
+            switch (model) {
+                case 0:
+                    if (color == 0) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/natural0.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/natural1.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/natural2.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/natural3.png";
+                                break;
+                        }
+                    }
+                    else if (color == 1) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/blue0.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/blue1.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/blue2.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/blue3.png";
+                                break;
+                        }
+                    }
+                    else if (color == 2) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/white0.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/white1.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/white2.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/white3.png";
+                                break;
+                        }
+                    }
+                    else if (color == 3) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/black0.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/black1.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/black2.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/black3.png";
+                                break;
+                        }
+                    }
+                    break;
+
+                case 1:
+                    if (color == 0) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/natural0m.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/natural1m.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/natural2m.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/natural3m.png";
+                                break;
+                        }
+                    }
+                    else if (color == 1) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/blue0m.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/blue1m.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/blue2m.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/blue3m.png";
+                                break;
+                        }
+                    }
+                    else if (color == 2) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/white0m.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/white1m.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/white2m.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/white3m.png";
+                                break;
+                        }
+                    }
+                    else if (color == 3) {
+                        switch (photo) {
+                            case 0:
+                                picture.src = "images/product_pages/iphone15pro/black0m.png";
+                                break;
+                            case 1:
+                                picture.src = "images/product_pages/iphone15pro/black1m.png";
+                                break;
+                            case 2:
+                                picture.src = "images/product_pages/iphone15pro/black2m.png";
+                                break;
+                            case 3:
+                                picture.src = "images/product_pages/iphone15pro/black3m.png";
+                                break;
+                        }
+                    }
+                    break;
+            }
+        }
+
+        /*LISTENER CLICK SULL'IMMAGINE*/
+        picture.addEventListener("click", () => {
+            if (photo == 3) {
+                photo = 0;
+            }
+            else {
+                photo++;
+            }
+            loadPicture();
+        });
+
+        /*LISTENER CAMBIO COLORE*/
+        btnsColor.forEach(btnColor => {
+            btnColor.addEventListener('click', () => {
+                let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
+                colorText.textContent = "Colore - " + coloreSelezionato;
+                color0.classList.remove("color_picker_on");
+                color1.classList.remove("color_picker_on");
+                color2.classList.remove("color_picker_on");
+                color3.classList.remove("color_picker_on");
+                switch (coloreSelezionato) {
+                    case "Titanio Naturale":
+                        color0.classList.add("color_picker_on");
+                        color = 0;
+                        break;
+                    case "Titanio Blu":
+                        color1.classList.add("color_picker_on");
+                        color = 1;
+                        break;
+                    case "Titanio Bianco":
+                        color2.classList.add("color_picker_on");
+                        color = 2;
+                        break;
+                    case "Titanio Nero":
+                        color3.classList.add("color_picker_on");
+                        color = 3;
+                        break;
+                }
+                loadPicture();
+            });
+        });
+
+        /*LISTENER CAMBIO MODELLO*/
+        btnsModel.forEach(btnModel => {
+            btnModel.addEventListener('change', () => {
+                let modelloSelezionato = document.querySelector(".option_product[name='option_model']:checked").value;
+                if (modelloSelezionato == "pro") {
+                    model = 0;
+                    model0.style.border = "#0066cc 1px solid";
+                    model1.style.border = "#82828300 1px solid";
+                    modelText.textContent = "iPhone 15 Pro";
+                    display.textContent = "Display 6.1\" Super Retina XDR con ProMotion e Always-on";
+                    r128.style.display = "block";
+                }
+                else if (modelloSelezionato == "max") {
+                    model = 1;
+                    model1.style.border = "#0066cc 1px solid";
+                    model0.style.border = "#82828300 1px solid";
+                    modelText.textContent = "iPhone 15 Pro Max";
+                    display.textContent = "Display 6.7\" Super Retina XDR con ProMotion e Always-on";
+                    r128.style.display = "none";
+                    if (rom == 128)
+                    {
+                        r128.style.border = "#828283 1px solid";
+                        r256.style.border = "#0066CC 1px solid";
+                        romText.textContent = "256GB di archiviazione";
+                        rom = 256;
+                    }
+                }
+                loadPicture();
+                calcolaPrezzo();
+            });
+        });
+
+        /*LISTENER CAMBIO ROM*/
+        btnsRom.forEach(btnRom => {
+            btnRom.addEventListener('change', () => {
+                let selectedRom = document.querySelector(".option_product[name='option_rom']:checked").value;
+                r128.style.border = "#828283 1px solid";
+                r256.style.border = "#828283 1px solid";
+                r512.style.border = "#828283 1px solid";
+                r1T.style.border = "#828283 1px solid";
+
+                if (selectedRom == "128") {
+                    r128.style.border = "#0066CC 1px solid";
+                    romText.textContent = "128GB di archiviazione";
+                    rom = 128;
+                }
+                else if (selectedRom == "256") {
+                    r256.style.border = "#0066CC 1px solid";
+                    romText.textContent = "256GB di archiviazione";
+                    rom = 256;
+                }
+                else if (selectedRom == "512") {
+                    r512.style.border = "#0066CC 1px solid";
+                    romText.textContent = "512GB di archiviazione";
+                    rom = 512;
+                }
+                else {
+                    r1T.style.border = "#0066CC 1px solid";
+                    romText.textContent = "1TB di archiviazione";
+                    rom = 1000;
+                }
+                calcolaPrezzo();
+            });
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="footer_content">
+        <div class="footer_coloumn">
+            <span class="footer_title">Scopri e Acquista</span>
+            <span class="footer_text"><a href="index.html">Store</a></span>
+            <span class="footer_text"><a href="mac.html">Mac</a></span>
+            <span class="footer_text"><a href="iphone.html">iPhone</a></span>
+            <span class="footer_text"><a href="ipad.html">iPad</a></span>
+            <span class="footer_text"><a href="watch.html">Watch</a></span>
+            <span class="footer_text"><a href="airpods.html">AirPods</a></span>
+            <span class="footer_text"><a href="catalogo.html">Catalogo</a></span>
+            <span class="footer_title">Apple Wallet</span>
+            <span class="footer_text">Apple Pay</span>
+
+        </div>
+        <div class="footer_coloumn">
+            <span class="footer_title">Account</span>
+            <span class="footer_text">Gestisci il tuo Account</span>
+            <span class="footer_text">Account Apple Store</span>
+            <span class="footer_text">iCloud</span>
+            <span class="footer_title">Intrattenimento</span>
+            <span class="footer_text">Apple One</span>
+            <span class="footer_text">Apple TV+</span>
+            <span class="footer_text">Apple Arcade</span>
+            <span class="footer_text">Apple Fitness+</span>
+            <span class="footer_text">Apple Podcast</span>
+            <span class="footer_text">App Store</span>
+
+        </div>
+        <div class="footer_coloumn">
+            <span class="footer_title">Apple Store</span>
+            <span class="footer_text">Trova un Apple Store</span>
+            <span class="footer_text">Genius Bar</span>
+            <span class="footer_text">Today at Apple</span>
+            <span class="footer_text">Campo Estivo Apple</span>
+            <span class="footer_text">L'App di Apple Store</span>
+            <span class="footer_text">Ricondizionato Certificato</span>
+            <span class="footer_text">Apple Trade-In</span>
+            <span class="footer_text">Finanziamenti</span>
+            <span class="footer_text">Stato dell'ordine</span>
+            <span class="footer_text">Assistenza agli acquisti</span>
+        </div>
+        <div class="footer_coloumn">
+            <span class="footer_title">Buisness</span>
+            <span class="footer_text">Apple Per il Buisness</span>
+            <span class="footer_text">Acquisti per le Aziende</span>
+            <span class="footer_title">Education</span>
+            <span class="footer_text">Apple nell'Istruzione</span>
+            <span class="footer_text">Acquisti per l'Università</span>
+            <span class="footer_title">Per la Salute</span>
+            <span class="footer_text">Apple e la Salute</span>
+            <span class="footer_text">Salute su Apple Watch</span>
+        </div>
+        <div class="footer_coloumn">
+            <span class="footer_title">I Valori di Apple</span>
+            <span class="footer_text">Accessibilità</span>
+            <span class="footer_text">Ambiente</span>
+            <span class="footer_text">Privacy</span>
+            <span class="footer_text">Responsabilità dei Fornitori</span>
+            <span class="footer_title">Info su Apple</span>
+            <span class="footer_text">Newsroom</span>
+            <span class="footer_text">Leadership Apple</span>
+            <span class="footer_text">Opportunità di Lavoro</span>
+            <span class="footer_text">Garanzia</span>
+            <span class="footer_text">Investitori</span>
+        </div>
+    </div>
+    <div class="footer_content">
+        <span class="footer_uptitle">Realizzato da: Andrea Norcia e Thomas Chierici 4AI 2023/2024 Silvio d'Arzo</span>
+    </div>
+</footer>
+
+</html>
