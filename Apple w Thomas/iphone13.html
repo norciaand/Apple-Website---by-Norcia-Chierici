@@ -54,7 +54,7 @@
                 <div class="image_product">
                     <img id="img" src="images/product_pages/iphone13/blue0.jpg">
                 </div>
-                <span id="prezzo">€ 979,00</span>
+                <span id="prezzo">€ 759,00</span>
                 <button class="button">ACQUISTA</button>
             </div>
             <div>
@@ -63,13 +63,13 @@
                         <span class="sottotitolo">Specifiche</span>
                     </div>
                     <ul class="list_product_stats">
-                        <li>Chip Apple A17 Pro con GPU 6 core</li>
-                        <li id="display">Display 6.1" Super Retina XDR con ProMotion e Always-on</li>
-                        <li>Sistema di fotocamere Pro: Principale 48MP + Ultra‑grandangolo + Teleobiettivo</li>
-                        <li>USB‑C Compatibile con USB 3</li>
+                        <li>Chip Apple A15 Bionic con GPU 4 core</li>
+                        <li id="display">Display 6.1" Super Retina XDR</li>
+                        <li>Sistema evoluto a doppia fotocamera: Principale 12MP + Ultra‑grandangolo</li>
+                        <li>USB‑C Compatibile con USB 2</li>
                         <li id="rom">128GB di archiviazione</li>
-                        <li>Cavo di ricarica USB‑C</li>
-                        <li>Face ID, Dynamic Island e Tasto Azione</li>
+                        <li>Cavo di ricarica Lightning</li>
+                        <li>Face ID e Tasto Suoneria/Silenzioso</li>
                     </ul>
                     <div class="box_title">
                         <span class="sottotitolo">Scegli il Modello</span>
@@ -183,6 +183,28 @@
         let color = 0;
         let photo = 0;
         let rom = 128;
+        const priceDef = 759;
+
+        function calcolaPrezzo(){
+            let price = priceDef;
+
+            switch (rom)
+            {
+                case 256:
+                    price+=130;
+                    break;
+                case 512:
+                    price+=380;
+                    break;
+                default:
+                    break;
+            }
+            if (price>1000)
+            {
+                price = "1." + price%1000;
+            }
+            priceText.textContent = "€ " + price + ",00";
+        }
 
 
         /*FUNZIONE CARICATRICE DELLE IMMAGINI*/
@@ -343,6 +365,7 @@
                     romText.textContent = "512GB di archiviazione";
                     rom = 512;
                 }
+                calcolaPrezzo();
             });
         });
     </script>

@@ -56,6 +56,7 @@
                     <img id="img" src="images/product_pages/macbookair15/midnight0.jpg">
                 </div>
                 <span id="prezzo">€ 1.649,00</span>
+                <button class="button">ACQUISTA</button>
             </div>
             <div>
                 <form class="form_product">
@@ -129,23 +130,11 @@
                     <label class="option_product_label" for="option_ram24" id="option_ram24_label">
                         <p>24GB di memoria unificata</p>
                     </label>
-
-                    <button class="buy">ACQUISTA</button>
                 </form>
             </div>
         </div>
 
 
-        <table>
-            <tr>
-                <td >
-                    
-                </td>
-                <td>
-                    
-                </td>
-            </tr>
-        </table>
     </div>
 
     <script>
@@ -156,8 +145,6 @@
         const color1 = document.getElementById("option_color_label_GALAXY");
         const color2 = document.getElementById("option_color_label_SILVER")
         const color3 = document.getElementById("option_color_label_GRAY");
-
-
 
         const r8 = document.getElementById("option_ram8_label");
         const r16 = document.getElementById("option_ram16_label");
@@ -253,7 +240,6 @@
             }
             loadPicture();
         });
-
 
         btnsColor.forEach(btnColor => {
             btnColor.addEventListener('change', () => {

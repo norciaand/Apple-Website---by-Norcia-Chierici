@@ -1,7 +1,6 @@
 ## COSA MANCA
 
-- catalogo: aggiornare nomi e foto
-- iphones 15, 14, 13 descrizioni
+- catalogo: aggiornare nomi e foto + LINKARE
 - ipad, sistemare la page (foto/video)
 - apple watch fare tutto (page, i 3 apple watch)
 - airpods (THOMAS)
@@ -13,23 +12,22 @@
 ## PREZZI IPHONE 
 
 
-- IPHONE 14 128  €879
-256 €1009
-512 €1259
-
-
-- IPHONE 14 PLUS 128  €979
-256 €1109
-512 €1359
+- IPHONE 15 PRO 
+    
+        128 1239
+        256 1369 +130
+        512 1619 +380
+        1tb 1869 +630
 
 
 
-- IPHONE 15 128 979
-256 1109
-512 1359
+- IPHONE 15 PRO MAX
+        
+       (128 1359 (+120))
+        256 1489 +130
+        512 1739 +380
+        1tb 1989 +630
 
-- PLUS 128 1129
-1259
-1509
+
 
 
