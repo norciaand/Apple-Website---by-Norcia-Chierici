@@ -582,6 +582,29 @@ nav {
 {
     background-image: url(images/card/macbookpro.jpeg);
 }
+
+#c4_airpodsmax{
+    background-image: url(images/card/airpodsmax.png);
+}
+
+#c4_watch9
+{
+    background-image: url(images/card/watch.jpeg);
+    color: white;
+}
+
+#c4_ipadair{
+    background-image: url(images/card/ipadair.jpg);
+    color: white;
+}
+
+#c4_ipadmini{
+    background-image: url(images/card/ipadmini.png);
+}
+
+#c4_watchultra{
+    background-image: url(images/card/applewatchultra.jpg);
+}
 /*------------------PRODUCT TYPE-----------------------------*/
 .video_product_box {
     box-shadow: 1px 1px 5px rgb(163, 163, 163);
