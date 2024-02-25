@@ -53,7 +53,7 @@
                 <div class="image_product">
                     <img id="img" src="images/product_pages/airpodspro/0.jpg">
                 </div>
-                <span id="prezzo">€ 279</span>
+                <span id="prezzo">€ 279,00</span>
                 <button class="button">ACQUISTA</button>
             </div>
             <div>
@@ -67,38 +67,27 @@
                         <li>Audio spaziale personalizzato</li> 
                         <li>Rilevamento dinamico della posizione della testa</li>
                         <li>Resistenza alla polvere, al sudore e all'acqua</li>
-                        <li>Custodia di ricarica MagSafe</li>
-                        <li>Fino a 6 ore di ascolto con una sola ricarica</li>
+                        <li>Custodia di ricarica MagSafe e fino a 6 ore di ascolto con una sola ricarica</li>
                     </ul>
                     <div class="box_title">
-                        <span class="sottotitolo"></span>
+                        <span class="sottotitolo">Visualizza Immagini</span>
                     </div>
                     <div class="list_product_stats" id="colorTexted" style="margin-top: 5px;"></div>
                     <div class="option_container iphone_color_picker">
-                        <input class="option_product" type="radio" name="option_color" value=""
-                            id="option_color_GRAY" required>
-                        <label for="option_color_GRAY">
-                            <img class="color_picker_off" id="color0" src="images/product_pages/airpodspro/00.jpg">
+                        <label>
+                            <img class="color_picker_off img_b" id="img0" src="images/product_pages/airpodspro/00.jpg">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value=""
-                            id="option_color_PINK" required>
-                        <label for="option_color_PINK">
-                            <img class="color_picker_off" id="color1" src="images/product_pages/airpodspro/11.jpg">
+                        <label>
+                            <img class="color_picker_off img_b" id="img1" src="images/product_pages/airpodspro/11.jpg">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value=""
-                            id="option_color_GREEN" required>
-                        <label for="option_color_GREEN">
-                            <img class="color_picker_off" id="color2" src="images/product_pages/airpodspro/22.jpg">
+                        <label>
+                            <img class="color_picker_off img_b" id="img2" src="images/product_pages/airpodspro/22.jpg">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value=""
-                            id="option_color_SILVER" required>
-                        <label for="option_color_SILVER">
-                            <img class="color_picker_off" id="color3" src="images/product_pages/airpodspro/33.jpg">
+                        <label>
+                            <img class="color_picker_off img_b" id="img3" src="images/product_pages/airpodspro/33.jpg">
                         </label>
-                        <input class="option_product" type="radio" name="option_color" value=""
-                            id="option_color_SKY" required>
-                        <label for="option_color_SKY">
-                            <img class="color_picker_off" id="color4" src="images/product_pages/airpodspro/44.jpg">
+                        <label> 
+                            <img class="color_picker_off img_b" id="img4" src="images/product_pages/airpodspro/44.jpg">
                         </label>
                     </div>
                 </form>
@@ -108,111 +97,87 @@
     
     <script>
         /*RADIO BUTTON*/
-        let btnsColor = document.querySelectorAll(".option_product[name='option_color']");
+        const btnsImg = document.querySelectorAll(".img_b");
 
         /*IMMAGINI CIRCOLARI COLORE*/
-        const color0 = document.getElementById("color0");
-        const color1 = document.getElementById("color1");
-        const color2 = document.getElementById("color2");
-        const color3 = document.getElementById("color3");
-        const color4 = document.getElementById("color4");
+        const img0 = document.getElementById("img0");
+        const img1 = document.getElementById("img1");
+        const img2 = document.getElementById("img2");
+        const img3 = document.getElementById("img3");
+        const img4 = document.getElementById("img4");
 
-        const colorText = document.getElementById("colorTexted");
         const picture = document.getElementById("img")                      /*immagine*/
-        const priceText = document.getElementById("prezzo"); 
 
-        color0.classList.add("color_picker_on");
 
-        let color = 0;
         let photo = 0;
 
          //CAMBIARE IMMAGINI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         function loadPicture() {
-
-            if (color == 0) {
-                switch (photo) {
-                    case 0:
-                        picture.src = "images/product_pages/airpodspro/0.jpg";
-                        break;
-                }
-            }
-            else if (color == 1) {
-                switch (photo) {
-                    case 0:
-                        picture.src = "images/product_pages/airpodspro/1.jpg";
-                        break;
-                }
-            }
-            else if (color == 2) {
-                switch (photo) {
-                    case 0:
-                        picture.src = "images/product_pages/airpodspro/2.jpg";
-                        break;
-                }
-            }
-            else if (color == 3) {
-                switch (photo) {
-                    case 0:
-                        picture.src = "images/product_pages/airpodspro/3.jpg";
-                        break;
-                }
-            }
-            else if (color == 4) {
-                switch (photo) {
-                    case 0:
-                        picture.src = "images/product_pages/airpodspro/4.jpg";
-                        break;
-                }
+            switch(photo)
+            {
+                case 0:
+                    picture.src = "images/product_pages/airpodspro/0.jpg";
+                    break;
+                case 1:
+                    picture.src = "images/product_pages/airpodspro/1.jpg";
+                    break;
+                case 2:
+                    picture.src = "images/product_pages/airpodspro/2.jpg";
+                    break;
+                case 3:
+                    picture.src = "images/product_pages/airpodspro/3.jpg";
+                    break;
+                case 4:
+                    picture.src = "images/product_pages/airpodspro/4.jpg";
+                    break;
             }
         }
         
-         /*LISTENER CLICK SULL'IMMAGINE*/
-         picture.addEventListener("click", () => {
-            if (photo == 3) {
-                photo = 0;
-            }
-            else {
-                photo++;
-            }
+        function classListBlue()
+        {
+            img0.classList.remove("color_picker_on");
+            img1.classList.remove("color_picker_on");
+            img2.classList.remove("color_picker_on");
+            img3.classList.remove("color_picker_on");
+            img4.classList.remove("color_picker_on");
+        }
+
+         /*LISTENER CAMBIO FOTO*/
+        img0.addEventListener("click", () => {
+            classListBlue();
+            photo = 0;
+            img0.classList.add("color_picker_on");
             loadPicture();
         });
 
-        
-         /*LISTENER CAMBIO COLORE*/
-         btnsColor.forEach(btnColor => {
-            btnColor.addEventListener('click', () => {
-                let coloreSelezionato = document.querySelector(".option_product[name='option_color']:checked").value;
-                colorText.textContent = "" + coloreSelezionato;
-                color0.classList.remove("color_picker_on");
-                color1.classList.remove("color_picker_on");
-                color2.classList.remove("color_picker_on");
-                color3.classList.remove("color_picker_on");
-                color4.classList.remove("color_picker_on");
-                switch (coloreSelezionato) {
-                    case "":
-                        color0.classList.add("color_picker_on");
-                        color = 0;
-                        break;
-                    case "":
-                        color1.classList.add("color_picker_on");
-                        color = 1;
-                        break;
-                    case "":
-                        color2.classList.add("color_picker_on");
-                        color = 2;
-                        break;
-                    case "":
-                        color3.classList.add("color_picker_on");
-                        color = 3;
-                        break;
-                    case "":
-                        color4.classList.add("color_picker_on");
-                        color = 4;
-                        break;
-                }
-                loadPicture();
-            });
+        img1.addEventListener("click", () => {
+            classListBlue();
+            photo = 1;
+            img1.classList.add("color_picker_on");
+            loadPicture();
         });
+
+        img2.addEventListener("click", () => {
+            classListBlue();
+            photo = 2;
+            img2.classList.add("color_picker_on");
+            loadPicture();
+        });
+
+        img3.addEventListener("click", () => {
+            classListBlue();
+            photo = 3;
+            img3.classList.add("color_picker_on");
+            loadPicture();
+        });
+
+        img4.addEventListener("click", () => {
+            classListBlue();
+            photo = 4;
+            img4.classList.add("color_picker_on");
+            loadPicture();
+        });
+
     </script>
 </body>
 
