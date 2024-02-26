@@ -1257,3 +1257,118 @@ footer{
         margin: 0 auto;
     }
 }
+
+
+
+/*--------------------- SHOP--------------- */
+.shop_body
+{
+    height: 80vh;
+    margin: 2vh 15% 6vh 15%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+.shop_col2{
+    width: 50%;
+    height: fit-content;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.shop_col2.border{
+    border-right: #afadad 1px solid;
+}
+
+.col_content{
+    width: 70%;
+    height: 100%;
+}
+
+.form_content{
+    align-items: center;
+    margin: auto 0;
+}
+
+.shop_body input {
+    display: block;
+    border: 1px solid #afadad;
+    padding: 2px;
+    border-radius: 15px;
+    width:92%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 15px;
+    outline-color: #0066CC;
+    padding: 5px 4%;
+}
+
+.shop_body .x2input{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.shop_body .x2input > input
+{
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .shop_body{
+        flex-wrap: wrap;
+        margin: 2vh 7% 2vh 7%;
+        overflow-y: scroll;
+        height: 90vh;
+    }
+    .shop_col2{
+        width: 100%;
+    }
+    .shop_col2.border{
+        border-right: none;
+    }
+    .col_content{
+        margin-top: 3vh;
+    }
+    .button{
+        margin-bottom: 2vh;
+    }
+}
+
+
+/* THANKS */
+.thanks{
+    height: 80vh;
+    margin: 2vh 15% 2vh 15%;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+.thanks span{
+    display: block;
+}
+.back_home .button{
+    margin-bottom: 2vh;
+}
+@media (max-width: 768px) {
+    .thanks{
+        flex-wrap: wrap;
+        margin: 2vh 7% 2vh 7%;
+        height: 70vh;
+    }
+    .thanks span{
+        font-size: 50px;
+        text-align: center;
+    }
+}
