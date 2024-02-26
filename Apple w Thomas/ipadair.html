@@ -153,6 +153,22 @@
         let color = 0;
         let photo = 0;
         let rom = 64;
+        const priceDef = 798;
+
+        function calcolaPrezzo(){
+            let price = priceDef;
+
+            switch (rom)
+            {
+                case 256:
+                    price+=130;
+                    priceText.textContent = "€ 1.169,00";
+                    break;
+                default:
+                    priceText.textContent = "€ 789,00";
+                    break;
+            }
+        }
 
         //CAMBIARE IMMAGINI!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         function loadPicture() {
@@ -289,6 +305,7 @@
                     romText.textContent = "256GB di archiviazione";
                     rom = 256;
                 }
+                calcolaPrezzo();
             });
         });
     </script>

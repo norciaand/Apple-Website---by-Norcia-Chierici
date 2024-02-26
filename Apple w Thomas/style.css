@@ -587,6 +587,18 @@ nav {
     background-image: url(images/card/airpodsmax.png);
 }
 
+#c4_airpodspro{
+    background-image: url(images/product_pages/airpodspro/0.jpg);
+    background-size: cover;
+    background-position: 50% 50px;
+}
+
+#c4_airpods3{
+    background-image: url(images/product_pages/airpods3/0.jpg);
+    background-size: cover;
+    background-position: 50% 50px;
+}
+
 #c4_watch9
 {
     background-image: url(images/card/watch.jpeg);
@@ -731,6 +743,21 @@ nav {
 #ipadmini {
     background-image: url(images/product_pages/ipadmini/galaxy0.png);
     background-size: contain;
+}
+
+#airpodsMax{
+    background-image: url(images/product_pages/airpodsmax/gray0.png);
+    background-size: contain;
+}
+
+#airpodsPro{
+    background-image: url(images/product_pages/airpodspro/0.jpg);
+    background-size: cover;
+}
+
+#airpods3{
+    background-image: url(images/product_pages/airpods3/0.jpg);
+    background-size: cover;
 }
 
 @media screen and (max-width: 768px) {

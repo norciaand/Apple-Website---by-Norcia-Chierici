@@ -56,6 +56,7 @@
                     <img id="img" src="images/product_pages/ipadmini/gray0.png">
                 </div>
                 <span id="prezzo">€ 659,00</span>
+                <button class="button">ACQUISTA</button>
             </div>
             <div>
                 <form class="form_product">
@@ -117,7 +118,6 @@
                         <p>256GB di archiviazione</p>
                     </label>
 
-                    <button class="buy">ACQUISTA</button>
                 </form>
             </div>
         </div>
@@ -147,7 +147,25 @@
 
         let color = 0;
         let photo = 0;
-        let rom = 64
+        let rom = 64;
+
+        const priceDef = 698;
+
+        function calcolaPrezzo(){
+            let price = priceDef;
+
+            switch (rom)
+            {
+                case 256:
+                    price+=130;
+                    priceText.textContent = "€ 1.069,00";
+                    break;
+                default:
+                    priceText.textContent = "€ 689,00";
+                    break;
+            }
+        }
+
 
         function loadPicture() {
 
@@ -264,6 +282,7 @@
                     romText.textContent = "256GB di archiviazione";
                     rom = 256;
                 }
+                calcolaPrezzo();    
             });
         });
     </script>

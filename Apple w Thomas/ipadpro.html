@@ -155,7 +155,35 @@
 
         let color = 0;
         let photo = 0;
-        let rom = 128
+        let rom = 128;
+        const priceDef = 1069;
+
+        function calcolaPrezzo(){
+            let price = priceDef;
+
+            switch (rom)
+            {
+                case 256:
+                    price+=130;
+                    priceText.textContent = "€ 1.199,00";
+                    break;
+                case 512:
+                    price+=380;
+                    priceText.textContent = "€ 1.449,00";
+                    break;
+                case 1000:
+                    price+=880;
+                    priceText.textContent = "€ 1.949,00";
+                    break;
+                case 2000:
+                    price+=1380;
+                    priceText.textContent = "€ 2.449,00";
+                    break;
+                default:
+                    priceText.textContent = "€ 1.069,00";
+                    break;
+            }
+        }
         
         function loadPicture() {
 
@@ -247,13 +275,14 @@
                 else if (selectedRom == "1T") {
                     r1T.style.border = "#0066CC 1px solid";
                     romText.textContent = "1TB di archiviazione";
-                    rom = 1;
+                    rom = 1000;
                 }
                 else if (selectedRom == "2T") {
                     r2T.style.border = "#0066CC 1px solid";
                     romText.textContent = "2TB di archiviazione";
-                    rom = 2;
+                    rom = 2000;
                 }
+                calcolaPrezzo();
             });
         });
     </script>
