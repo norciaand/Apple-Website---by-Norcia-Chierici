@@ -618,6 +618,10 @@ nav {
     background-image: url(images/card/applewatchultra.jpg);
 }
 /*------------------PRODUCT TYPE-----------------------------*/
+.img_product{
+    scale: 1.2;
+}
+
 .video_product_box {
     box-shadow: 1px 1px 5px rgb(163, 163, 163);
     margin-left: 7%;
