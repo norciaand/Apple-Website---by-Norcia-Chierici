@@ -415,7 +415,6 @@ nav {
     background-image: url(images/card/ipad.jpeg);
 }
 
-
 .card3 {
     box-shadow: 1px 1px 5px rgb(163, 163, 163);
     margin-top: 20px;
@@ -465,7 +464,6 @@ nav {
     width: fit-content;
     display: flex;
 }
-
 
 .card4 {
     box-shadow: 1px 1px 5px rgba(163, 163, 163, 1);
